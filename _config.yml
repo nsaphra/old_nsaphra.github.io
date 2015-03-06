@@ -1,4 +1,4 @@
-highlighter: true
+highlighter: pygments
 ppermalink: /blog/:title
 name: Objective Funk
 avatar: https://avatars3.githubusercontent.com/u/414788?v=3&s=460
