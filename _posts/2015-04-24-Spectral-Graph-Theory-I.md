@@ -31,7 +31,7 @@ We will use ${\bf X}(i,j)$ interchangeably with ${\bf X}_{i,j}$ for entries in
 matrix ${\bf X}$, and ${\bf x}(i)$ interchangeably with ${\bf x}_i$ for entries in
 vector ${\bf{x}}$.
 
-The *adjacency matrix* ${\bf A} \in \left{ 0,1 \right}^{|V| \times |V|}$ tells us which nodes are connected.
+The *adjacency matrix* ${\bf A} \in \{ 0,1 \}^{|V| \times |V|}$ tells us which nodes are connected.
 We set ${\bf A}_{uv} = 1$ if there is an edge from $u$ to $v$.
 If the edge $(u,v) \not\in E$, then the corresponding entry in $A$ is set to 0.
 
@@ -73,7 +73,7 @@ The Laplacian
 To understand the Laplacian matrix, let's first define the Laplacian ${\bf L}$
 for a simple graph[^1] $G = (V,E)$.
 For two node indices $u,v \in V$, the corresponding cell in the Laplacian is given in terms of the degree of each node.
-$${\bf L}_{uw} = \begin{cases}
+$${\bf L}_{uv} = \begin{cases}
     {\textrm{deg}_u} &\mbox{if } u = v \\
     -1 & \mbox{if } (u,v) \in E\\
     0 & \mbox{otherwise}.
