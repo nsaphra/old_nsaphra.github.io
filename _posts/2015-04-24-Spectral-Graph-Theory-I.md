@@ -119,7 +119,7 @@ A intuition for the normalized Laplacian can be gleaned from its product
 with a vector ${\bf g} \in \mathbb{R}^{|V|}$.
 
 $$\begin{aligned}
-\left[ {\mathcal{L}}g \right]_u &= \frac{1}{\sqrt{ {\textrm{deg}(u)} }} \sum_{v: (u,v) \in E} \left(\frac{ {\bf g}_u }{\sqrt{ {\textrm{deg}(u)} }} - \frac{ {\bf g}_v }{\sqrt{ {\textrm{deg}(v)} }} \right)\\
+\left[ {\mathcal{L}} {\bf g} \right]_u &= \frac{1}{\sqrt{ {\textrm{deg}(u)} }} \sum_{v: (u,v) \in E} \left(\frac{ {\bf g}_u }{\sqrt{ {\textrm{deg}(u)} }} - \frac{ {\bf g}_v }{\sqrt{ {\textrm{deg}(v)} }} \right)\\
 &= \frac{1}{\sqrt{ {\textrm{deg}(u)} }} \left({\textrm{deg}(u)} \frac{ {\bf g}_u }{\sqrt{ {\textrm{deg}(u)} }} -  \sum_{v: (u,v) \in E} \frac{ {\bf g}_v }{\sqrt{ {\textrm{deg}(v)} }} \right)\\
 &= {\bf g}_u - \sum_{v: (u,v) \in E} \frac{ {\bf g}_v }{\sqrt{ {\textrm{deg}(u)} {\textrm{deg}(v)} }}
 \end{aligned}$$
