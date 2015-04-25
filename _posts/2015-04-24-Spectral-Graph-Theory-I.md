@@ -132,7 +132,7 @@ be -1, and since the only other nonzero entry will be a 1 (in cell $v$), the
 sum of values in the resulting vector will be 0! In fact, any output
 vector will have a sum of 0.
 
-If we activate more bits in $g$ in addition to $v$, what happens to
+If we activate more bits in ${\bf g}$ in addition to $v$, what happens to
 $\[{\mathcal{L}}{\bf g}\]_u$? If we activate every node in the graph and each
 cell receives a uniform weight, then the product will be 0. When else
 does this happen? If we start with any node $v$ and then activate cells
