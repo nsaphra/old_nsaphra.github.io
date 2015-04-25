@@ -113,10 +113,10 @@ in ${\bf L}$ can be expressed as $${\bf L}_{uv} = \begin{cases}
     \end{aligned}
     $$
 
-### What does it mean?
+#### What does it mean?
 
 A intuition for the normalized Laplacian can be gleaned from its product
-with a vector ${\bf g} \in V^n$.
+with a vector ${\bf g} \in \mathbb{R}^{|V|}$.
 
 $$\begin{aligned}
 \left[ {\mathcal{L}}g \right]_u &= \frac{1}{\sqrt{ {\textrm{deg}(u)} }} \sum_{v: (u,v) \in E} \left(\frac{ {\bf g}_u }{\sqrt{ {\textrm{deg}(u)} }} - \frac{ {\bf g}_v }{\sqrt{ {\textrm{deg}(v)} }} \right)\\
