@@ -32,28 +32,28 @@ matrix ${\bf X}$, and ${\bf x}(i)$ interchangeably with ${\bf x}_i$ for entries 
 vector ${\bf{x}}$.
 
 The *adjacency matrix* ${\bf A} \in \{0,1\}^{|V| \times |V|}$ tells us which nodes are connected.
-We set ${\bf A}(u,v) = 1$ if there is an edge from $u$ to $v$.
+We set ${\bf A}_{uv} = 1$ if there is an edge from $u$ to $v$.
 If the edge $(u,v) \not\in E$, then the corresponding entry in $A$ is set to 0.
 
 In an unweighted graph, the adjacency matrix is sufficient for describing $G$.
 However, in our analysis we will often rely on information from another matrix characterizing the graph.
 The *degree matrix* ${\bf D} \in \mathbb{N}^{|V| \times |V|}$ gives us information about how connected a node is.
-It is a diagonal matrix in which ${\bf D}(u,u) = {\textrm{deg}(u)}$, which corresponds to the number of edges coming from node $u$.
+It is a diagonal matrix in which ${\bf D}_{uu} = {\textrm{deg}(u)}$, which corresponds to the number of edges coming from node $u$.
 
 The Walk Matrix
 -------------
 
 If a matrix represents a graph, what do vectors represent?
 A weight vector ${\bf x} \in \mathbb{R}^{|V|}$ assigns some mass to node $v$, which we can retrieve by multiplying the weight vector by a one-hot vector ${\bf v}$, with one bit active at the element corresponding to $v$.
-So we can view a weight vector as a function mapping nodes onto reals.
+So we can view a weight vector as a function mapping nodes to reals.
 
 The *walk matrix* of $G$, defined as ${\bf W} = {\bf A} {\bf D}^{-1}$, provides a way of simulating a random walk through the graph.
 If we input a one-hot vector ${\bf v}$, representing a starting point at node $v$, we compute the probability that we end up at node $u$ after one step in a random walk:
 
 $$
 \begin{aligned}
-\left[{\bf W} {\bf v}\right](u) &=  \sum_{w \in V} \left[ {\bf A} {\bf D}^{-1} \right](u,w) {\bf v}(w)  \\
-&= \sum_{w \in V} {\bf A}(u,w) \frac{1}{\textrm{deg}(w)} {\bf v}(w)\\
+\left[{\bf W} {\bf v}\right]_u &=  \sum_{w \in V} \left[ {\bf A} {\bf D}^{-1} \right]_{uw} {\bf v}_w  \\
+&= \sum_{w \in V} {\bf A}_{uw} \frac{1}{\textrm{deg}(w)} {\bf v}_w\\
 &= \begin{cases}
     \frac{1}{\textrm{deg}(u)} &\mbox{if } (v,u) \in E \\
     0 & \mbox{otherwise}.
@@ -73,16 +73,16 @@ The Laplacian
 To understand the Laplacian matrix, let's first define the Laplacian ${\bf L}$
 for a simple graph[^1] $G = (V,E)$.
 For two node indices $u,v \in V$, the corresponding cell in the Laplacian is given in terms of the degree of each node.
-$${\bf L}(u,v) = \begin{cases}
-    {\textrm{deg}(u)} &\mbox{if } u = v \\
-    -1 & \mbox{if } \textrm{if $(u,v) \in E$}\\
+$${\bf L}_{uw} = \begin{cases}
+    {\textrm{deg}_u} &\mbox{if } u = v \\
+    -1 & \mbox{if } (u,v) \in E\\
     0 & \mbox{otherwise}.
 \end{cases}$$
 
 For the normalized Laplacian $\mathcal{L}$, we instead say
-$$\mathcal{L}(u,v) = \begin{cases}
+$$\mathcal{L}_{uv} = \begin{cases}
     1 &\mbox{if } \textrm{$u = v$ and ${\textrm{deg}(v)} \not= 0$} \\
-    -\frac{1}{\sqrt{ {\textrm{deg}(u)} {\textrm{deg}(v)} }} & \mbox{if } \textrm{if $(u,v) \in E$}\\
+    -\frac{1}{\sqrt{ {\textrm{deg}(u)} {\textrm{deg}(v)} }} & \mbox{if } (u,v) \in E\\
     0 & \mbox{otherwise}.
 \end{cases}$$
 
@@ -92,22 +92,23 @@ Let's look at some of its properties:
 
 - Every row and column sums to 0.
 - For a graph with no isolated nodes, the diagonals of $\mathcal{L}$ are all 1. In this case, we can decompose the matrix in terms ${\bf D}$ and ${\bf A}$.
-- Note that ${\mathcal{L}}(u,v) = {\bf L}(u,v) \frac{1}{\sqrt{ {\textrm{deg}(u)} {\textrm{deg}(v)} }} = {\bf L}(u,v) {\bf D}^{-1/2}(u){\bf D}^{-1/2}(v)$. We therefore know that ${\mathcal{L}}$ decomposes as:
+- Note that
+\\( {\mathcal{L}}_{uv} = { {\bf L}\_{uv} } \frac{1}{\sqrt{ {\textrm{deg}(u)} {\textrm{deg}(v)} }} = {\bf L}\_{uv} {\bf D}^{-1/2}_u {\bf D}^{-1/2}_v \\). We therefore know that ${\mathcal{L}}$ decomposes as:
 
     $$
     \begin{aligned}
-    {\mathcal{L}}(u,v) &= {\bf D}^{-1/2} {\bf L} {\bf D}^{-1/2}
+    {\mathcal{L}}_{uv} &= {\bf D}^{-1/2} {\bf L} {\bf D}^{-1/2}
     \end{aligned}
     $$.
 - The cells
-in ${\bf L}$ can be expressed as $${\bf L}(u,v) = \begin{cases}
-    -{\bf A}(u,v) &\mbox{if } u \not= v\\
-    {\bf D}(u,u) &\mbox{if } u = v
-\end{cases}$$, and in a simple graph we know ${\bf A}(u,u) = 0$ since there are no self-cycles. Therefore, we have the decomposition:
+in ${\bf L}$ can be expressed as $${\bf L}_{uv} = \begin{cases}
+    -{\bf A}_{uv} &\mbox{if } u \not= v\\
+    {\bf D}_{uu} &\mbox{if } u = v
+\end{cases}$$, and in a simple graph we know ${\bf A}_{uu} = 0$ since there are no self-cycles. Therefore, we have the decomposition:
 
     $$
     \begin{aligned}
-    {\mathcal{L}}(u,v) &= {\bf D}^{-1/2} ({\bf D} - {\bf A}) {\bf D}^{-1/2}\\
+    {\mathcal{L}} &= {\bf D}^{-1/2} ({\bf D} - {\bf A}) {\bf D}^{-1/2}\\
     &= {\bf I} - {\bf D}^{-1/2} {\bf A} {\bf D}^{-1/2}
     \end{aligned}
     $$
@@ -115,24 +116,24 @@ in ${\bf L}$ can be expressed as $${\bf L}(u,v) = \begin{cases}
 ### What does it mean?
 
 A intuition for the normalized Laplacian can be gleaned from its product
-with a vector $g \in V^n$.
+with a vector ${\bf g} \in V^n$.
 
 $$\begin{aligned}
-\left[ {\mathcal{L}}g \right](u) &= \frac{1}{\sqrt{ {\textrm{deg}(u)} }} \sum_{v: (u,v) \in E} \left(\frac{g(u)}{\sqrt{ {\textrm{deg}(u)} }} - \frac{g(v)}{\sqrt{ {\textrm{deg}(v)} }} \right)\\
-&= \frac{1}{\sqrt{ {\textrm{deg}(u)} }} \left({\textrm{deg}(u)} \frac{g(u)}{\sqrt{ {\textrm{deg}(u)} }} -  \sum_{v: (u,v) \in E} \frac{g(v)}{\sqrt{ {\textrm{deg}(v)} }} \right)\\
-&= g(u) - \sum_{v: (u,v) \in E} \frac{g(v)}{\sqrt{ {\textrm{deg}(u)} {\textrm{deg}(v)} }}
+\left[ {\mathcal{L}}g \right]_u &= \frac{1}{\sqrt{ {\textrm{deg}(u)} }} \sum_{v: (u,v) \in E} \left(\frac{ {\bf g}_u }{\sqrt{ {\textrm{deg}(u)} }} - \frac{ {\bf g}_v }{\sqrt{ {\textrm{deg}(v)} }} \right)\\
+&= \frac{1}{\sqrt{ {\textrm{deg}(u)} }} \left({\textrm{deg}(u)} \frac{ {\bf g}_u }{\sqrt{ {\textrm{deg}(u)} }} -  \sum_{v: (u,v) \in E} \frac{ {\bf g}_v }{\sqrt{ {\textrm{deg}(v)} }} \right)\\
+&= {\bf g}_u - \sum_{v: (u,v) \in E} \frac{ {\bf g}_v }{\sqrt{ {\textrm{deg}(u)} {\textrm{deg}(v)} }}
 \end{aligned}$$
 
-For a one-hot vector $g$ representing node $v$, $\[{\mathcal{L}}g\](v) = 1$ and for all other $u \in V$,
-$\[{\mathcal{L}}g\](u) = -\frac{1}{\sqrt{ {\textrm{deg}(u)} {\textrm{deg}(v)} }}$
-if $u$ and $v$ are adjacent, and otherwise $\[{\mathcal{L}}g\](v) = 0$.
+For a one-hot vector ${\bf g}$ representing node $v$, $\[{\mathcal{L}}{\bf g}\](v) = 1$ and for all other $u \in V$,
+$\[{\mathcal{L}}{\bf g}\]_u = -\frac{1}{\sqrt{ {\textrm{deg}(u)} {\textrm{deg}(v)} }}$
+if $u$ and $v$ are adjacent, and otherwise $\[{\mathcal{L}} {\bf g}\]_v = 0$.
 Note that the sum of output cells for the nodes neighboring $v$ will
 be -1, and since the only other nonzero entry will be a 1 (in cell $v$), the
 sum of values in the resulting vector will be 0! In fact, any output
 vector will have a sum of 0.
 
 If we activate more bits in $g$ in addition to $v$, what happens to
-$\[{\mathcal{L}}g\](u)$? If we activate every node in the graph and each
+$\[{\mathcal{L}}{\bf g}\]_u$? If we activate every node in the graph and each
 cell receives a uniform weight, then the product will be 0. When else
 does this happen? If we start with any node $v$ and then activate cells
 in our vector corresponding to each of its neighbors, and go on
@@ -143,8 +144,8 @@ product of 0 occurs if the nodes activated in the input vector form a
 closed subgraph – that is, no node has an edge connecting it to a node
 that is not activated.
 
-<!-- Another way to think of the product ${\mathcal{L}}g$ is as a potential
-function where the nodes with positive weights in $g$ “attract” while
+<!-- Another way to think of the product ${\mathcal{L}}{\bf g}$ is as a potential
+function where the nodes with positive weights in ${\bf g}$ “attract” while
 their neighbors “repel”. A steady state can be achieved with a vector
 representing a closed subgraph, so these attractions and repulsions are
 perfectly balanced, resulting in an output vector of 0s.
