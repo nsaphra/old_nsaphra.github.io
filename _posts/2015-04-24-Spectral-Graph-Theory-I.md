@@ -55,7 +55,7 @@ $$
 \left[{\bf W} {\bf v}\right]_u &=  \sum_{w \in V} \left[ {\bf A} {\bf D}^{-1} \right]_{uw} {\bf v}_w  \\
 &= \sum_{w \in V} {\bf A}_{uw} \frac{1}{\textrm{deg}(w)} {\bf v}_w\\
 &= \begin{cases}
-    \frac{1}{\textrm{deg}(u)} &\mbox{if } (v,u) \in E \\
+    \frac{1}{\textrm{deg}(v)} &\mbox{if } (v,u) \in E \\
     0 & \mbox{otherwise}.
 \end{cases}
 \end{aligned}
