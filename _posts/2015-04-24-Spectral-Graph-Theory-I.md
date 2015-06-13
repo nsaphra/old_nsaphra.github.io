@@ -6,7 +6,7 @@ tags: linear_algebra graphs
 year: 2015
 month: 04
 day: 24
-published: true
+published: false
 summary: I explain the Graph Laplacian to myself - and possibly to you!
 image: post_one.jpg
 ---
