@@ -1,6 +1,48 @@
-highlighter: pygments
-ppermalink: /blog/:title
-name: Objective Funk
-avatar: https://avatars3.githubusercontent.com/u/414788?v=3&s=460
-disqus: nsaphra
-markdown: kramdown
+name:               "Naomi Saphra"
+description:        "Current PhD student at The University of Edinburgh. My main current interests are in applying NLP techniques to informal domains, and in semantic representations that work across languages and domains."
+
+url:                ""
+author:             "nsaphra"
+email:              "n.saphra@ed.ac.uk"
+gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
+twitter:            "nsaphra"
+github:             "nsaphra"
+linkedin:           "nsaphra"
+
+disqus_shortname:   "nsaphra"
+
+background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
+
+paginate:           5
+paginate_path:      "/page:num/"
+
+baseurl:            ""
+permalink:          /:year/:month/:day/:title/
+
+markdown:           kramdown
+
+nav:
+  - name:           "Publications"
+    href:           "/pub"
+  - name:           "Download"
+    href:           "/releases"
+
+sass:
+  style:            :compressed
+
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+
+gems:
+  - jekyll-paginate
