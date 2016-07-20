@@ -8,7 +8,7 @@ Naomi Saphra and Adam Lopez. <a href="https://arxiv.org/pdf/1606.08270v1.pdf">Ev
 </p>
 
 <p>
-Naomi Saphra and Adam Lopez. AMRICA: an AMR Inspector for Cross-language Alignments. Proceedings of NAACL-HLT, 2016.
+Naomi Saphra and Adam Lopez. <a href="http://www.aclweb.org/anthology/N15-3008">AMRICA: an AMR Inspector for Cross-language Alignments</a>. Proceedings of NAACL-HLT, 2016.
 </p>
 
 <p>
