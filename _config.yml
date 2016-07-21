@@ -26,6 +26,8 @@ nav:
     href:           "/pub"
   - name:           "Projects"
     href:           "/projects"
+  - name:           "CV"
+    href:           "/cv"
 
 sass:
   style:            :compressed
