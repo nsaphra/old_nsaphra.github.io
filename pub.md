@@ -1,5 +1,6 @@
 ---
 title: Publications
+layout: page
 permalink: /pub/
 ---
 
