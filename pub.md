@@ -4,9 +4,9 @@ layout: page
 permalink: /pub/
 ---
 
-- Naomi Saphra and Adam Lopez. Evaluating Informal-Domain Word Representations With UrbanDictionary. The First Workshop on Evaluating Vector Space Representations for NLP, 2016. [[paper]](https://arxiv.org/pdf/1606.08270v1.pdf") [[code]](https://github.com/nsaphra/urbandic-scraper)
+- Naomi Saphra and Adam Lopez. Evaluating Informal-Domain Word Representations With UrbanDictionary. The First Workshop on Evaluating Vector Space Representations for NLP, 2016. [[paper]](https://arxiv.org/pdf/1606.08270v1.pdf) [[code]](https://github.com/nsaphra/urbandic-scraper)
 
-- Naomi Saphra and Adam Lopez. AMRICA: an AMR Inspector for Cross-language Alignments. Proceedings of NAACL-HLT, 2016. <a href="http://www.aclweb.org/anthology/N15-3008">[paper]</a> <a href="https://github.com/nsaphra/AMRICA">[code]</a>
+- Naomi Saphra and Adam Lopez. AMRICA: an AMR Inspector for Cross-language Alignments. Proceedings of NAACL-HLT, 2016. [[paper]](http://www.aclweb.org/anthology/N15-3008) [[code]](https://github.com/nsaphra/AMRICA)
 
 - Ryan Cotterell, Adithya Renduchintala, Naomi Saphra, and Chris Callison-Burch. An Algerian Arabic-French Code-Switched Corpus. LREC Workshop on Free/Open-Source Arabic Corpora and Corpora Processing Tools, 2014.
 
