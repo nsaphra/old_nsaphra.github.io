@@ -24,8 +24,6 @@ markdown:           kramdown
 nav:
   - name:           "Publications"
     href:           "/pub"
-  - name:           "Projects"
-    href:           "/projects"
   - name:           "CV"
     href:           "/cv"
 
