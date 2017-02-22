@@ -3,7 +3,6 @@ title: CV
 layout: page
 permalink: /cv/
 ---
-Naomi Saphra
 ============
 
 ----
@@ -22,6 +21,10 @@ Naomi Saphra
 *Minor: Language Technologies*
 
 # Work
+
+**Tutor, University of Edinburgh (2016)**
+
+Probabilistic Modeling And Reasoning; Informatics Research Review.
 
 **Google (Summer 2015):**
 
