@@ -3,9 +3,6 @@ title: CV
 layout: page
 permalink: /cv/
 ---
-============
-
-----
 
 >  n.saphra@ed.ac.uk
 
