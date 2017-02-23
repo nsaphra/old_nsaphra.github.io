@@ -4,10 +4,6 @@ layout: page
 permalink: /cv/
 ---
 
->  n.saphra@ed.ac.uk
-
-----
-
 # Education
 
 **PhD, Informatics.** University of Edinburgh (In Progress, est. 2019)
