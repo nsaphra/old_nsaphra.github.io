@@ -13,7 +13,7 @@ permalink: /cv/
 **Bachelor of Science, Computer Science.** Carnegie Mellon University, 2013.\\
 *Minor: Language Technologies*
 
-## Work
+### Work
 
 **Tutor, University of Edinburgh (2016)**
 
@@ -48,7 +48,7 @@ to verify and explore boundary annotations from Mechanical Turk.
 
 Engineering Intern. Engineered and tested new features for the People You May Know model.
 
-## Service/Awards
+### Service/Awards
 - Student Social Chair for ACL 2014.
 - Carnegie Mellon School of Computer Science Dragon Award.
 - Volunteer for North American Computational Linguistics Olympiad.
