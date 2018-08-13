@@ -1,7 +1,20 @@
 ---
+title: Model Scheduling
+layout: post
+category: Machine_Learning
+tags: deep_learning
+year: 2018
+month: 08
+day: 10
+published: false
+description: A lay-computer-scientist's explanation of the LDA model, written when I was an undergrad.
+image: post_one.jpg
+---
+<!--
+---
 bibliography: 'models.bib'
 csl: 'acm-sigchi.csl'
----
+--- -->
 
 Model Scheduling {#model}
 ================
@@ -432,7 +445,7 @@ stat\]*. Retrieved March 22, 2017 from <http://arxiv.org/abs/1703.06229>
 
 ::: {#ref-mozer_using_1989}
 19\. Michael C. Mozer and Paul Smolensky. 1989. Using Relevance to Reduce
-Network Size Automatically. 
+Network Size Automatically.
 :::
 
 ::: {#ref-philipp_nonparametric_2017}
@@ -464,6 +477,6 @@ arXiv:1412.6563*. Retrieved June 9, 2016 from
 ::: {#ref-nikolas_wolfe_incredible_2017}
 24\. Nikolas Wolfe, Aditya Sharma, Lukas Drude, and Bhiksha Raj. 2017.
 The Incredible Shrinking Neural Network: New Perspectives on Learning
-Representations Through The Lens of Pruning. 
+Representations Through The Lens of Pruning.
 :::
 :::
