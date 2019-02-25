@@ -15,7 +15,7 @@ weight = 60
 
 +++
 
-- Naomi Saphra and Adam Lopez. Understanding Learning Dynamics Of Language Models with SVCCA. NAACL 2019.
+- Naomi Saphra and Adam Lopez. Understanding Learning Dynamics Of Language Models with SVCCA. NAACL-HLT, 2019.
 
 - Naomi Saphra and Adam Lopez. Evaluating Informal-Domain Word Representations With UrbanDictionary. The First Workshop on Evaluating Vector Space Representations for NLP, 2016. [[paper]](https://arxiv.org/pdf/1606.08270v1.pdf) [[code]](https://github.com/nsaphra/urbandic-scraper)
 
