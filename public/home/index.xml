@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on Objective Funk</title>
+    <link>http://nsaphra.github.io/home/</link>
+    <description>Recent content in Homes on Objective Funk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="http://nsaphra.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://nsaphra.github.io/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      
+      <guid>http://nsaphra.github.io/home/about/</guid>
+      <description>Biography PhD student at The University of Edinburgh. My main current interests are in understanding how deep models work on NLP tasks and interact with linguistic structure and in how we can encode inductive priors from linguistics into the training process of neural networks.</description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>http://nsaphra.github.io/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      
+      <guid>http://nsaphra.github.io/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>http://nsaphra.github.io/home/pub/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      
+      <guid>http://nsaphra.github.io/home/pub/</guid>
+      <description>Naomi Saphra and Adam Lopez. Evaluating Informal-Domain Word Representations With UrbanDictionary. The First Workshop on Evaluating Vector Space Representations for NLP, 2016. [paper] [code]
+ Naomi Saphra and Adam Lopez. AMRICA: an AMR Inspector for Cross-language Alignments. Proceedings of NAACL-HLT, 2016. [paper] [code]
+ Ryan Cotterell, Adithya Renduchintala, Naomi Saphra, and Chris Callison-Burch. An Algerian Arabic-French Code-Switched Corpus. LREC Workshop on Free/Open-Source Arabic Corpora and Corpora Processing Tools, 2014.</description>
+    </item>
+    
+    <item>
+      <title>CV</title>
+      <link>http://nsaphra.github.io/home/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/home/cv/</guid>
+      <description>Education PhD, Informatics. University of Edinburgh (In Progress, est. 2020)
+Masters of Science and Engineering, Computer Science. Johns Hopkins University, 2015
+Bachelor of Science, Computer Science. Carnegie Mellon University, 2013.
+Minor: Language Technologies
+The Recurse Center (Sabbatical) Experimental unstructured educational programming retreat.
+Research Experience Johns Hopkins University (2013-2015):
+Research Assistant. Machine translation, informal domain adaptation, and semantics research in pursuit of a PhD.
+Language Technologies Institute, Carnegie Mellon University (2010-2013):</description>
+    </item>
+    
+  </channel>
+</rss>
