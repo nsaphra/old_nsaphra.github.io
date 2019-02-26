@@ -4,7 +4,7 @@
 # To create more sections, duplicate this file and edit the values below as desired.
 widget = "custom"
 active = true
-date = 2016-04-20T00:00:00
+date = 2019-02-24T00:00:00
 
 # Note: a full width section format can be enabled by commenting out the `title` and `subtitle` with a `#`.
 title = "Publications"
@@ -15,6 +15,7 @@ weight = 60
 
 +++
 
+- Naomi Saphra and Adam Lopez. Understanding Learning Dynamics Of Language Models with SVCCA. NAACL-HLT, 2019.
 
 - Naomi Saphra and Adam Lopez. Evaluating Informal-Domain Word Representations With UrbanDictionary. The First Workshop on Evaluating Vector Space Representations for NLP, 2016. [[paper]](https://arxiv.org/pdf/1606.08270v1.pdf) [[code]](https://github.com/nsaphra/urbandic-scraper)
 
