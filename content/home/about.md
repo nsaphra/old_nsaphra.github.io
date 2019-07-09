@@ -34,4 +34,4 @@ weight = 5
 
 # Biography
 
-PhD student at The University of Edinburgh. My main current interests are in understanding how deep models work on NLP tasks and interact with linguistic structure and in how we can encode inductive priors from linguistics into the training process of neural networks.
+PhD student at The University of Edinburgh. My current interests are in understanding how deep models learn to encode linguistic structure and in how we can encode inductive bias from linguistics into the training process.

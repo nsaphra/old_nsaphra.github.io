@@ -69,7 +69,13 @@ Ancient Greek. (I will never drop this item from my CV.)
 - Carnegie Mellon Tartanhacks Mentor (hackathon).
 
 ### Awards
+- Daniella Sciama Award for Achievement through Adversity 2019.
 - Google Europe Scholarship for Students with Disabilities 2017.
 - Carnegie Mellon School of Computer Science Dragon Award.
 - National Merit Semifinalist.
 - Nannina Rasulo Memorial Scholarship Award for Technology 2009.
+
+### Talks
+- *Learning Dynamics of Language Models* - City University of New York 05/28/2019
+- [*Paying the Panopticon*](https://www.youtube.com/watch?v=BzNDdS-lcqM) - The Stand Comedy Club's Bright Club 02/26/2019
+- *Learning Dynamics of Text Models With SVCCA* - University of Amsterdam 01/25/2019
