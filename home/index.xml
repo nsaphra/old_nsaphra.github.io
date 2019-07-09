@@ -18,7 +18,7 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/home/about/</guid>
-      <description>Biography PhD student at The University of Edinburgh. My main current interests are in understanding how deep models work on NLP tasks and interact with linguistic structure and in how we can encode inductive priors from linguistics into the training process of neural networks.</description>
+      <description>Biography PhD student at The University of Edinburgh. My current interests are in understanding how deep models learn to encode linguistic structure and in how we can encode inductive bias from linguistics into the training process.</description>
     </item>
     
     <item>
@@ -36,10 +36,10 @@
       <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://nsaphra.github.io/home/pub/</guid>
-      <description>Naomi Saphra and Adam Lopez. Understanding Learning Dynamics Of Language Models with SVCCA. NAACL-HLT, 2019.
+      <description>Naomi Saphra and Adam Lopez. Sparsity Emerges Naturally in Neural Language Models. Identifying and Understanding Deep Learning Phenomena Workshop at ICML, 2019. [paper]
+ Naomi Saphra and Adam Lopez. Understanding Learning Dynamics Of Language Models with SVCCA. NAACL-HLT, 2019. [paper]
  Naomi Saphra and Adam Lopez. Evaluating Informal-Domain Word Representations With UrbanDictionary. The First Workshop on Evaluating Vector Space Representations for NLP, 2016. [paper] [code]
- Naomi Saphra and Adam Lopez. AMRICA: an AMR Inspector for Cross-language Alignments. Proceedings of NAACL-HLT, 2016. [paper] [code]
- Ryan Cotterell, Adithya Renduchintala, Naomi Saphra, and Chris Callison-Burch. An Algerian Arabic-French Code-Switched Corpus.</description>
+ Naomi Saphra and Adam Lopez.</description>
     </item>
     
     <item>
