@@ -4,6 +4,22 @@
     
     <url>
     
+      <loc>http://nsaphra.github.io/publication/saphra-sparsity-2019/</loc>
+      <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>http://nsaphra.github.io/publication/saphra-understanding-2019/</loc>
+      <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>http://nsaphra.github.io/post/model-scheduling/</loc>
       <lastmod>2018-08-13T15:49:02+01:00</lastmod>
     </url>
@@ -28,6 +44,62 @@
     
     <url>
     
+      <loc>http://nsaphra.github.io/publication/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>http://nsaphra.github.io/publication/saphra-evaluating-2016/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>http://nsaphra.github.io/publication/naomi-saphra-amrica-2015/</loc>
+      <lastmod>2015-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>http://nsaphra.github.io/publication/naomi-saphra-domain-2015/</loc>
+      <lastmod>2015-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>http://nsaphra.github.io/publication/schneider-framework-2014/</loc>
+      <lastmod>2014-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>http://nsaphra.github.io/publication/cotterell-algerian-2014/</loc>
+      <lastmod>2014-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>http://nsaphra.github.io/publication/vedaldi-understanding-2014/</loc>
+      <lastmod>2014-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>http://nsaphra.github.io/post/lda/</loc>
       <lastmod>2012-07-09T00:00:00+01:00</lastmod>
     </url>
@@ -36,7 +108,40 @@
     
     <url>
     
+      <loc>http://nsaphra.github.io/publication/naomi-saphra-automatic-2012/</loc>
+      <lastmod>2012-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>http://nsaphra.github.io/cv/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>http://nsaphra.github.io/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>http://nsaphra.github.io/tags/computer-science-computation-and-language/</loc>
+      <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>http://nsaphra.github.io/tags/computer-science-neural-and-evolutionary-computing/</loc>
+      <lastmod>2019-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -54,6 +159,7 @@
     <url>
     
       <loc>http://nsaphra.github.io/tags/</loc>
+      <lastmod>2019-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

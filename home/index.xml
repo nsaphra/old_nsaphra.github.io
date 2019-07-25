@@ -18,7 +18,7 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/home/about/</guid>
-      <description>Biography PhD student at The University of Edinburgh. My current interests are in understanding how deep models learn to encode linguistic structure and in how we can encode inductive bias from linguistics into the training process.</description>
+      <description>Biography I am a PhD student at The University of Edinburgh, studying NLP and machine learning with my primary supervisor Adam Lopez. My current interests are in understanding how deep models learn to encode linguistic structure and in how we can encode inductive bias from linguistics into the training process.</description>
     </item>
     
     <item>
@@ -31,31 +31,12 @@
     </item>
     
     <item>
-      <title>Publications</title>
-      <link>http://nsaphra.github.io/home/pub/</link>
-      <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
+      <title>Selected Publications</title>
+      <link>http://nsaphra.github.io/home/publications_selected/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
       
-      <guid>http://nsaphra.github.io/home/pub/</guid>
-      <description>Naomi Saphra and Adam Lopez. Sparsity Emerges Naturally in Neural Language Models. Identifying and Understanding Deep Learning Phenomena Workshop at ICML, 2019. [paper]
- Naomi Saphra and Adam Lopez. Understanding Learning Dynamics Of Language Models with SVCCA. NAACL-HLT, 2019. [paper]
- Naomi Saphra and Adam Lopez. Evaluating Informal-Domain Word Representations With UrbanDictionary. The First Workshop on Evaluating Vector Space Representations for NLP, 2016. [paper] [code]
- Naomi Saphra and Adam Lopez.</description>
-    </item>
-    
-    <item>
-      <title>CV</title>
-      <link>http://nsaphra.github.io/home/cv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://nsaphra.github.io/home/cv/</guid>
-      <description>Education PhD, Informatics. University of Edinburgh (In Progress, est. 2020)
-Masters of Science and Engineering, Computer Science. Johns Hopkins University, 2015
-Bachelor of Science, Computer Science. Carnegie Mellon University, 2013.
-Minor: Language Technologies
-The Recurse Center (Sabbatical) Experimental unstructured educational programming retreat.
-Research Experience Johns Hopkins University (2013-2015):
-Research Assistant. Machine translation, informal domain adaptation, and semantics research in pursuit of a PhD.
-Language Technologies Institute, Carnegie Mellon University (2010-2013):</description>
+      <guid>http://nsaphra.github.io/home/publications_selected/</guid>
+      <description></description>
     </item>
     
   </channel>

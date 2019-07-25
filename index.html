@@ -155,23 +155,6 @@
         
         
         
-
-        <li class="nav-item">
-          <a href="/#pub" data-target="#pub">
-            
-            <span>Publications</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-        
-        
-        
-        
           
         
 
@@ -191,9 +174,28 @@
         
         
         
+          
+        
 
         <li class="nav-item">
-          <a href="/#cv" data-target="#cv">
+          <a href="/publication" data-target="publication">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a href="/cv/" data-target="cv/">
             
             <span>CV</span>
             
@@ -231,7 +233,7 @@
 
 
 
-<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email">
+<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-address">
   <div class="col-xs-12 col-md-4">
     <div id="profile">
 
@@ -249,9 +251,9 @@
 
         
         <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          
+          <a href="https://edinburghnlp.inf.ed.ac.uk/" target="_blank" itemprop="url" rel="noopener">
           <span itemprop="name">University of Edinburgh</span>
-          
+          </a>
         </h3>
         
       </div>
@@ -283,6 +285,13 @@
         
         
         <li>
+          <a itemprop="sameAs" href="https://www.semanticscholar.org/author/Naomi-Saphra/2362960" target="_blank" rel="noopener">
+            <i class="ai ai-semantic-scholar big-icon"></i>
+          </a>
+        </li>
+        
+        
+        <li>
           <a itemprop="sameAs" href="//github.com/nsaphra" target="_blank" rel="noopener">
             <i class="fa fa-github big-icon"></i>
           </a>
@@ -298,7 +307,7 @@
 
 <h1 id="biography">Biography</h1>
 
-<p>PhD student at The University of Edinburgh. My current interests are in understanding how deep models learn to encode linguistic structure and in how we can encode inductive bias from linguistics into the training process.</p>
+<p>I am a PhD student at The University of Edinburgh, studying NLP and machine learning with my primary supervisor <a href="https://alopez.github.io/" target="_blank">Adam Lopez</a>. My current interests are in understanding how deep models learn to encode linguistic structure and in how we can encode inductive bias from linguistics into the training process.</p>
 
 
     <div class="row">
@@ -427,11 +436,6 @@
   </span>
 
   
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    15 min read
-  </span>
-  
 
   
   
@@ -507,11 +511,6 @@ Dynamic Hyperparameters The easiest incrementally modified models to train may b
   </span>
 
   
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    5 min read
-  </span>
-  
 
   
   
@@ -560,147 +559,205 @@ This post is directed to a lay CS audience. I am an undergraduate in CS, so I co
   
   
   
-  <section id="pub" class="home-section">
+  <section id="publications_selected" class="home-section">
     <div class="container">
       
 
 
+
 <div class="row">
-  
   <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Publications</h1>
+    <h1>Selected Publications</h1>
     
   </div>
   <div class="col-xs-12 col-md-8">
-    <ul>
-<li><p>Naomi Saphra and Adam Lopez. Sparsity Emerges Naturally in Neural Language Models. Identifying and Understanding Deep Learning Phenomena Workshop at ICML, 2019. <a href="https://openreview.net/pdf?id=H1ets1h56E" target="_blank">[paper]</a></p></li>
+    
 
-<li><p>Naomi Saphra and Adam Lopez. Understanding Learning Dynamics Of Language Models with SVCCA. NAACL-HLT, 2019. <a href="https://www.aclweb.org/anthology/N19-1329" target="_blank">[paper]</a></p></li>
+    
+      
+    
 
-<li><p>Naomi Saphra and Adam Lopez. Evaluating Informal-Domain Word Representations With UrbanDictionary. The First Workshop on Evaluating Vector Space Representations for NLP, 2016. <a href="https://arxiv.org/pdf/1606.08270v1.pdf" target="_blank">[paper]</a> <a href="https://github.com/nsaphra/urbandic-scraper" target="_blank">[code]</a></p></li>
+    
+    
+      
+        <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
 
-<li><p>Naomi Saphra and Adam Lopez. AMRICA: an AMR Inspector for Cross-language Alignments. Proceedings of NAACL-HLT, 2016. <a href="http://www.aclweb.org/anthology/N15-3008" target="_blank">[paper]</a> <a href="https://github.com/nsaphra/AMRICA" target="_blank">[code]</a></p></li>
+  
+  
 
-<li><p>Ryan Cotterell, Adithya Renduchintala, Naomi Saphra, and Chris Callison-Burch. An Algerian Arabic-French Code-Switched Corpus. LREC Workshop on Free/Open-Source Arabic Corpora and Corpora Processing Tools, 2014.</p></li>
+  <h3 class="article-title" itemprop="name">
+    <a href="http://nsaphra.github.io/publication/saphra-sparsity-2019/" itemprop="url">Sparsity Emerges Naturally in Neural Language Models</a>
+  </h3>
 
-<li><p>Nathan Schneider, Brendan O’Connor, Naomi Saphra, David Bamman, Manaal Faruqui, Noah A. Smith, Chris Dyer, Jason Baldridge.
-A framework for (under)specifying dependency syntax without overloading annotators. Proceedings of the ACL Linguistic Annotation Workshop, 2013. <a href="http://arxiv.org/pdf/1306.2091.pdf" target="_blank">[paper]</a></p></li>
+  <div class="pub-abstract" itemprop="text">
+    
+    Concerns about interpretability, computational resources, and principled inductive priors have motivated efforts to engineer sparse  neural  models for NLP tasks. If sparsity is important for NLP, might well-trained neural models naturally become roughly sparse? Using the Taxi-Euclidean norm to measure sparsity, we find that frequent input words are associated with concentrated or sparse activations, while frequent target words are associated with dispersed activations but concentrated gradients. We find that  gradients associated with function words are more concentrated than the gradients of content words, even controlling for word frequency.
+    
+  </div>
 
-<li><p>Andrea Vedaldi, Siddharth Mahendran, Stavros Tsogkas, Subhransu Maji, Ross Girshick, Juho Kannala, Esa Rahtu, Iasonas Kokkinos, Matthew B. Blaschko, David Weiss, Ben Taskar, Karen Simonyan, Naomi Saphra, Sammy Mohamed. Understanding objects in detail with fine-grained attributes. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 3622-3629, 2014.</p></li>
-</ul>
+  <div class="pub-authors" itemprop="author">
+    
+    Naomi Saphra, Adam Lopez
+    
+  </div>
+
+  <div class="pub-publication">
+    
+    <em>ICML Workshop on Identifying and Understanding Deep Learning Phenomena</em>,
+    
+    2019
+  </div>
+
+  <div class="pub-links">
+    
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://openreview.net/forum?id=H1ets1h56E" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </div>
-  
+
 </div>
 
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="cv" class="home-section">
-    <div class="container">
       
+    
+      
+        <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
 
-
-<div class="row">
   
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>CV</h1>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="http://nsaphra.github.io/publication/saphra-understanding-2019/" itemprop="url">Understanding Learning Dynamics Of Language Models with SVCCA</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    Research has shown that neural models implicitly encode linguistic features, but there has been no research showing emphhow these encodings arise as the models are trained. We present the first study on the learning dynamics of neural language models, using a simple and flexible analysis method called Singular Vector Canonical Correlation Analysis (SVCCA), which enables us to compare learned representations across time and across models, without the need to evaluate directly on annotated data. We probe the evolution of syntactic, semantic, and topic representations and find that part-of-speech is learned earlier than topic; that recurrent layers become more similar to those of a tagger during training; and embedding layers less similar. Our results and methods could inform better learning algorithms for NLP models, possibly to incorporate linguistic information more effectively.
     
   </div>
-  <div class="col-xs-12 col-md-8">
+
+  <div class="pub-authors" itemprop="author">
+    
+    Naomi Saphra, Adam Lopez
+    
+  </div>
+
+  <div class="pub-publication">
+    
+    <em>NAACL</em>,
+    
+    2019
+  </div>
+
+  <div class="pub-links">
     
 
-<h3 id="education">Education</h3>
 
-<p><strong>PhD, Informatics.</strong> University of Edinburgh (In Progress, est. 2020)</p>
 
-<p><strong>Masters of Science and Engineering, Computer Science.</strong> Johns Hopkins University, 2015</p>
 
-<p><strong>Bachelor of Science, Computer Science.</strong> Carnegie Mellon University, 2013.<br />
-<em>Minor: Language Technologies</em></p>
+<a class="btn btn-primary btn-outline btn-xs" href="http://arxiv.org/abs/1811.00225" target="_blank" rel="noopener">
+  PDF
+</a>
 
-<p><strong>The Recurse Center (Sabbatical)</strong> Experimental unstructured educational programming retreat.</p>
 
-<h3 id="research-experience">Research Experience</h3>
 
-<p><strong>Johns Hopkins University (2013-2015):</strong></p>
 
-<p>Research Assistant. Machine translation, informal domain adaptation, and semantics research in pursuit of a PhD.</p>
 
-<p><strong>Language Technologies Institute, Carnegie Mellon University (2010-2013):</strong></p>
 
-<p>Research Assistant. Helped design fragmented dependency parse framework and implemented Python libraries for it.</p>
 
-<p><strong>The Johns Hopkins University Center for Language and Speech Processing (Summer 2012):</strong></p>
 
-<p>Undergraduate Research Fellow at the CLSP Summer Workshop. On computer vision team, implemented machine learning algorithms in Matlab
-to verify and explore boundary annotations from Mechanical Turk.</p>
 
-<h3 id="industry-experience">Industry Experience</h3>
 
-<p><strong>Koko, inc. (2017)</strong></p>
 
-<p>Contractor. Developed neural classifiers for informal text at NYC startup.</p>
 
-<p><strong>Google (Summer 2015):</strong></p>
 
-<p>SWE Intern, Machine intelligence group. Worked on semantics of complex noun phrases.</p>
 
-<p><strong>Google (Summer 2013):</strong></p>
-
-<p>SWE Intern, machine intelligence group. Using models of real-world knowledge as feedback to semantic annotation systems.</p>
-
-<p><strong>Facebook, Inc. (Summer 2011):</strong></p>
-
-<p>Engineering Intern. Engineered and tested new features for the People You May Know model.</p>
-
-<h3 id="teaching">Teaching</h3>
-
-<p><strong>Tutor, University of Edinburgh (2016-2018)</strong></p>
-
-<p>Machine Learning And Pattern Recognition; Probabilistic Modeling And Reasoning; Informatics Research Review.</p>
-
-<p><strong>Course Assistant, Johns Hopkins University (Fall 2013):</strong></p>
-
-<p>Natural Language Processing.</p>
-
-<p><strong>Teacher&rsquo;s Assistant, Irvington High School (2008):</strong></p>
-
-<p>Ancient Greek. (I will never drop this item from my CV.)</p>
-
-<h3 id="service">Service</h3>
-
-<ul>
-<li>Student Social Co-Chair for ACL 2014.</li>
-<li>Volunteer for North American Computational Linguistics Olympiad.</li>
-<li>Carnegie Mellon TechNights volunteer (outreach program).</li>
-<li>Carnegie Mellon Tartanhacks Mentor (hackathon).</li>
-</ul>
-
-<h3 id="awards">Awards</h3>
-
-<ul>
-<li>Daniella Sciama Award for Achievement through Adversity 2019.</li>
-<li>Google Europe Scholarship for Students with Disabilities 2017.</li>
-<li>Carnegie Mellon School of Computer Science Dragon Award.</li>
-<li>National Merit Semifinalist.</li>
-<li>Nannina Rasulo Memorial Scholarship Award for Technology 2009.</li>
-</ul>
-
-<h3 id="talks">Talks</h3>
-
-<ul>
-<li><em>Learning Dynamics of Language Models</em> - City University of New York 05/28/2019</li>
-<li><a href="https://www.youtube.com/watch?v=BzNDdS-lcqM" target="_blank"><em>Paying the Panopticon</em></a> - The Stand Comedy Club&rsquo;s Bright Club 02/26/2019</li>
-<li><em>Learning Dynamics of Text Models With SVCCA</em> - University of Amsterdam 01/25/2019</li>
-</ul>
 
   </div>
+
+</div>
+
+      
+    
+      
+        <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
   
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="http://nsaphra.github.io/publication/naomi-saphra-amrica-2015/" itemprop="url">AMRICA: an AMR Inspector for Cross-language Alignments</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    Abstract Meaning Representation (AMR), an annotation scheme for natural language semantics, has drawn attention for its simplicity and representational power. Because AMR annotations are not designed for human readability, we present AMRICA, a visual aid for exploration of AMR annotations. AMRICA can visualize an AMR or the difference between two AMRs to help users diagnose interannotator disagreement or errors from an AMR parser. AMRICA can also automatically align and visualize the AMRs of a sentence and its translation in a parallel text. We believe AMRICA will simplify and streamline exploratory research on cross-lingual AMR corpora.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    Naomi Saphra, Adam Lopez
+    
+  </div>
+
+  <div class="pub-publication">
+    
+    <em>Proc. of NAACL</em>,
+    
+    2015
+  </div>
+
+  <div class="pub-links">
+    
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://www.aclweb.org/anthology/N15-3008" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+      
+    
+
+  </div>
 </div>
 
     </div>

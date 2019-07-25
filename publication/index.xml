@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Objective Funk</title>
+    <link>http://nsaphra.github.io/publication/</link>
+    <description>Recent content in Publications on Objective Funk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://nsaphra.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sparsity Emerges Naturally in Neural Language Models</title>
+      <link>http://nsaphra.github.io/publication/saphra-sparsity-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/saphra-sparsity-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Understanding Learning Dynamics Of Language Models with SVCCA</title>
+      <link>http://nsaphra.github.io/publication/saphra-understanding-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/saphra-understanding-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evaluating Informal-Domain Word Representations With UrbanDictionary</title>
+      <link>http://nsaphra.github.io/publication/saphra-evaluating-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/saphra-evaluating-2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AMRICA: an AMR Inspector for Cross-language Alignments</title>
+      <link>http://nsaphra.github.io/publication/naomi-saphra-amrica-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/naomi-saphra-amrica-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Domain Adaptation for Word Embeddings With Matrix Factorization</title>
+      <link>http://nsaphra.github.io/publication/naomi-saphra-domain-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/naomi-saphra-domain-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A framework for (under) specifying dependency syntax without overloading annotators</title>
+      <link>http://nsaphra.github.io/publication/schneider-framework-2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/schneider-framework-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Algerian Arabic-French Code-Switched Corpus</title>
+      <link>http://nsaphra.github.io/publication/cotterell-algerian-2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/cotterell-algerian-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Understanding Objects in Detail with Fine-grained Attributes.</title>
+      <link>http://nsaphra.github.io/publication/vedaldi-understanding-2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/vedaldi-understanding-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automatic verification of boundary annotations from mechanical turk</title>
+      <link>http://nsaphra.github.io/publication/naomi-saphra-automatic-2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/naomi-saphra-automatic-2012/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
