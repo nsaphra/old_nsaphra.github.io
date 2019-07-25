@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recent &amp; Upcoming Talks on Objective Funk</title>
+    <link>http://nsaphra.github.io/talk/</link>
+    <description>Recent content in Recent &amp; Upcoming Talks on Objective Funk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://nsaphra.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning Dynamics of Language Models</title>
+      <link>http://nsaphra.github.io/talk/cuny/</link>
+      <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
+      
+      <guid>http://nsaphra.github.io/talk/cuny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Dynamics of Text Models With SVCCA</title>
+      <link>http://nsaphra.github.io/talk/amsterdam/</link>
+      <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
+      
+      <guid>http://nsaphra.github.io/talk/amsterdam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paying the Panopticon</title>
+      <link>http://nsaphra.github.io/talk/panopticon/</link>
+      <pubDate>Tue, 26 Feb 2019 13:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/talk/panopticon/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

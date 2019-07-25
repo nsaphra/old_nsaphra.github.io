@@ -11,6 +11,33 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Learning Dynamics of Language Models</title>
+      <link>http://nsaphra.github.io/talk/cuny/</link>
+      <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
+      
+      <guid>http://nsaphra.github.io/talk/cuny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Dynamics of Text Models With SVCCA</title>
+      <link>http://nsaphra.github.io/talk/amsterdam/</link>
+      <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
+      
+      <guid>http://nsaphra.github.io/talk/amsterdam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paying the Panopticon</title>
+      <link>http://nsaphra.github.io/talk/panopticon/</link>
+      <pubDate>Tue, 26 Feb 2019 13:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/talk/panopticon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Sparsity Emerges Naturally in Neural Language Models</title>
       <link>http://nsaphra.github.io/publication/saphra-sparsity-2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
@@ -519,101 +546,6 @@ is trained using an objective that combines a loss function applied to true labe
       
       <guid>http://nsaphra.github.io/publication/naomi-saphra-automatic-2012/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>CV</title>
-      <link>http://nsaphra.github.io/cv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://nsaphra.github.io/cv/</guid>
-      <description>
-
-&lt;h3 id=&#34;education&#34;&gt;Education&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;PhD, Informatics.&lt;/strong&gt; University of Edinburgh (In Progress, est. 2020)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Masters of Science and Engineering, Computer Science.&lt;/strong&gt; Johns Hopkins University, 2015&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Bachelor of Science, Computer Science.&lt;/strong&gt; Carnegie Mellon University, 2013.&lt;br /&gt;
-&lt;em&gt;Minor: Language Technologies&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;The Recurse Center (Sabbatical)&lt;/strong&gt; Experimental unstructured educational programming retreat.&lt;/p&gt;
-
-&lt;h3 id=&#34;research-experience&#34;&gt;Research Experience&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Johns Hopkins University (2013-2015):&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Research Assistant. Machine translation, informal domain adaptation, and semantics research in pursuit of a PhD.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Language Technologies Institute, Carnegie Mellon University (2010-2013):&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Research Assistant. Helped design fragmented dependency parse framework and implemented Python libraries for it.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;The Johns Hopkins University Center for Language and Speech Processing (Summer 2012):&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Undergraduate Research Fellow at the CLSP Summer Workshop. On computer vision team, implemented machine learning algorithms in Matlab
-to verify and explore boundary annotations from Mechanical Turk.&lt;/p&gt;
-
-&lt;h3 id=&#34;industry-experience&#34;&gt;Industry Experience&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Koko, inc. (2017)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Contractor. Developed neural classifiers for informal text at NYC startup.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Google (Summer 2015):&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;SWE Intern, Machine Intelligence group. Worked on semantics of complex noun phrases.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Google (Summer 2013):&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;SWE Intern, Machine Intelligence group. Using models of real-world knowledge as feedback to semantic annotation systems.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Facebook, Inc. (Summer 2011):&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Engineering Intern. Engineered and tested new features for the People You May Know model.&lt;/p&gt;
-
-&lt;h3 id=&#34;teaching&#34;&gt;Teaching&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Tutor, University of Edinburgh (2016-2019)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Machine Learning And Pattern Recognition; Probabilistic Modeling And Reasoning; Informatics Research Review.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Course Assistant, Johns Hopkins University (Fall 2013):&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Natural Language Processing.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Teacher&amp;rsquo;s Assistant, Irvington High School (2008):&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Ancient Greek. (I will never drop this item from my CV.)&lt;/p&gt;
-
-&lt;h3 id=&#34;service&#34;&gt;Service&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Student Social Co-Chair for ACL 2014.&lt;/li&gt;
-&lt;li&gt;Volunteer for North American Computational Linguistics Olympiad.&lt;/li&gt;
-&lt;li&gt;Carnegie Mellon TechNights volunteer (outreach program).&lt;/li&gt;
-&lt;li&gt;Carnegie Mellon Tartanhacks Mentor (hackathon).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;awards&#34;&gt;Awards&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Daniella Sciama Award for Achievement through Adversity 2019.&lt;/li&gt;
-&lt;li&gt;Google Europe Scholarship for Students with Disabilities 2017.&lt;/li&gt;
-&lt;li&gt;Carnegie Mellon School of Computer Science Dragon Award 2013.&lt;/li&gt;
-&lt;li&gt;National Merit Semifinalist 2009.&lt;/li&gt;
-&lt;li&gt;Nannina Rasulo Memorial Scholarship Award for Technology 2009.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;talks&#34;&gt;Talks&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Learning Dynamics of Language Models&lt;/em&gt; - City University of New York 05/28/2019&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=BzNDdS-lcqM&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Paying the Panopticon&lt;/em&gt;&lt;/a&gt; - The Stand Comedy Club&amp;rsquo;s Bright Club 02/26/2019&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Learning Dynamics of Text Models With SVCCA&lt;/em&gt; - University of Amsterdam 01/25/2019&lt;/li&gt;
-&lt;/ul&gt;
-</description>
     </item>
     
   </channel>
