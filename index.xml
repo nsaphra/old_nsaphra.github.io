@@ -26,7 +26,7 @@
 
 &lt;h2 id=&#34;talon&#34;&gt;Talon&lt;/h2&gt;
 
-&lt;p&gt;Due to this disability, I cannot type or write. Many people have asked me about the stack that enables me to be productive in spite of this limitation.&lt;/p&gt;
+&lt;p&gt;Due to this disability, I cannot type or write. Many people have asked me about the stack that enables me to be productive in spite of this limitation. I hope this information is helpful both for people with more severe limitations, and for programmers with mild repetitive stress injuries who can benefit from reducing their keyboard use.&lt;/p&gt;
 
 &lt;p&gt;The star of the show is &lt;a href=&#34;https://talonvoice.com/&#34; target=&#34;_blank&#34;&gt;Talon&lt;/a&gt;, a system which makes it easy to write customized grammars and scripts that work with speech recognition systems to enable programming. Commands range from simple aliases for common symbols to complex meta-commands which repeat a previous utterance or  change dictation modes. For example, just in the case of parentheses, I have separate commands for &lt;code&gt;(&lt;/code&gt;, &lt;code&gt;)&lt;/code&gt;, &lt;code&gt;()&lt;/code&gt;, and &lt;code&gt;()⬅️&lt;/code&gt; (which leaves the cursor between parentheses so my next utterance is bracketed).&lt;/p&gt;
 
