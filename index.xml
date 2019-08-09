@@ -18,7 +18,7 @@
       <guid>http://nsaphra.github.io/post/hands/</guid>
       <description>
 
-&lt;p&gt;In August of 2015, my hands stopped working. I could still control them, but every movement accumulated more pain, so every motion came with a cost: getting dressed in the  morning, sending a text, lifting a glass. In relating this story, I often mention that I spent a month with nothing to do but go to a bar and order a shot of vodka with a straw in it. I then laugh, as though this is a joke.&lt;/p&gt;
+&lt;p&gt;In August of 2015, my hands stopped working. I could still control them, but every movement accumulated more pain, so every motion came with a cost: getting dressed in the  morning, sending a text, lifting a glass. In relating this story, I often mention that I spent a month with nothing to do but go to a bar and order a shot of vodka with a straw in it. This is a very funny joke.&lt;/p&gt;
 
 &lt;p&gt;I have been in pain for four years.&lt;/p&gt;
 
@@ -28,9 +28,9 @@
 
 &lt;p&gt;Due to this disability, I cannot type or write. Many people have asked me about the stack that enables me to be productive in spite of this limitation.&lt;/p&gt;
 
-&lt;p&gt;The star of the show is &lt;a href=&#34;https://talonvoice.com/&#34; target=&#34;_blank&#34;&gt;Talon&lt;/a&gt;, a system which makes it easy to write customized grammars and scripts that work with speech recognition systems to enable programmers. Commands range from simple aliases for common symbols to complex meta-commands to repeat a previous utterance or  change dictation modes. For example, just in the case of parentheses, I have separate commands for &lt;code&gt;(&lt;/code&gt;, &lt;code&gt;)&lt;/code&gt;, &lt;code&gt;()&lt;/code&gt;, and &lt;code&gt;()⬅️&lt;/code&gt; (which leaves the cursor between parentheses so my next utterance is bracketed).&lt;/p&gt;
+&lt;p&gt;The star of the show is &lt;a href=&#34;https://talonvoice.com/&#34; target=&#34;_blank&#34;&gt;Talon&lt;/a&gt;, a system which makes it easy to write customized grammars and scripts that work with speech recognition systems to enable programming. Commands range from simple aliases for common symbols to complex meta-commands which repeat a previous utterance or  change dictation modes. For example, just in the case of parentheses, I have separate commands for &lt;code&gt;(&lt;/code&gt;, &lt;code&gt;)&lt;/code&gt;, &lt;code&gt;()&lt;/code&gt;, and &lt;code&gt;()⬅️&lt;/code&gt; (which leaves the cursor between parentheses so my next utterance is bracketed).&lt;/p&gt;
 
-&lt;p&gt;We each have a number of scripts particular to the programmer. My most precious script that I&amp;rsquo;ve written is probably my indexed clipboard:&lt;/p&gt;
+&lt;p&gt;Each Talon user has a number of personal scripts. The most precious script that I&amp;rsquo;ve written is probably my indexed clipboard:&lt;/p&gt;
 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt; &lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; talon.voice &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; Key, press, Str, Context
  &lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; talon &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; clip
@@ -69,13 +69,13 @@
 &lt;/div&gt;
 
 
-&lt;p&gt;My Talon setup relies on Dragon for the speech recognition side. Unfortunately, Nuance has discontinued OSX Dragon editions that make scripting possible. The coder behind Talon, &lt;a href=&#34;http://ryanhileman.com/&#34; target=&#34;_blank&#34;&gt;Ryan Hileman&lt;/a&gt;, is working on a suitable replacement but as of the publication of this blog post it is not yet ready.&lt;/p&gt;
+&lt;p&gt;My Talon setup relies on Dragon for the speech recognition side. Unfortunately, Nuance has discontinued OSX Dragon editions that make scripting possible. The coder behind Talon, &lt;a href=&#34;http://ryanhileman.com/&#34; target=&#34;_blank&#34;&gt;Ryan Hileman&lt;/a&gt;, is working on a suitable replacement but at time of writing, it is not yet ready.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;h3 id=&#34;interlude&#34;&gt;Interlude&lt;/h3&gt;
 
-&lt;p&gt;People often ask my diagnosis, but it officially depends on the country I&amp;rsquo;m in. After an initial assumption that carpal tunnel was to blame, I was given my first diagnosis: &lt;em&gt;fibromyalgia&lt;/em&gt;, a word which is Doctor for &amp;ldquo;go away&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;People often ask for my diagnosis, but it officially depends on the country I&amp;rsquo;m in. After an initial assumption that carpal tunnel was to blame, I was given my first American diagnosis: &lt;em&gt;fibromyalgia&lt;/em&gt;, a word which is Doctor for &amp;ldquo;go away&amp;rdquo;.&lt;/p&gt;
 
 &lt;p&gt;Later on a neurologist performed a skin biopsy that led to my official American diagnosis of &amp;ldquo;idiopathic small fiber neuropathy&amp;rdquo;, meaning that I am missing crucial nerve fibers that transmit heat and pain but nobody knows why. &lt;em&gt;Idiopathic&lt;/em&gt; is also Doctor for &amp;ldquo;go away&amp;rdquo;.&lt;/p&gt;
 
@@ -89,7 +89,7 @@
 
 &lt;h2 id=&#34;equipment&#34;&gt;Equipment&lt;/h2&gt;
 
-&lt;p&gt;For dictating, I use two different microphones. In the office, I use a &lt;a href=&#34;https://www.amazon.com/Sennheiser-ME-II-Dynamic-Microphone/dp/B00UO0UNOE&#34; target=&#34;_blank&#34;&gt;Sennheiser ME-3&lt;/a&gt;, while for travel I use a Bluetooth headset, the &lt;a href=&#34;https://en-uk.sennheiser.com/mb-pro-1-uc-ml-and-mb-pro-2-uc-ml&#34; target=&#34;_blank&#34;&gt;Sennheiser MB Pro 2&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For dictating, I use two different microphones. In the office, I use a &lt;a href=&#34;https://en-uk.sennheiser.com/me-3-ii&#34; target=&#34;_blank&#34;&gt;Sennheiser ME-3&lt;/a&gt;, while for travel I use a Bluetooth headset, the &lt;a href=&#34;https://en-uk.sennheiser.com/mb-pro-1-uc-ml-and-mb-pro-2-uc-ml&#34; target=&#34;_blank&#34;&gt;Sennheiser MB Pro 2&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Another essential piece of equipment for me is my foot pedal, a &lt;a href=&#34;https://www.pageflip.com/products/firefly&#34; target=&#34;_blank&#34;&gt;PageFlip Firefly&lt;/a&gt;. It is programmable, so I have modified the settings to include one that is useful for reading papers in &lt;a href=&#34;https://skim-app.sourceforge.io/&#34; target=&#34;_blank&#34;&gt;Skim&lt;/a&gt;, with the left pedal corresponding to a click and the right pedal corresponding to down arrow. I can use my feet to scroll, and to click for annotations. Another pedal setting I have added maps the pedals to click and shift+enter. This setting is useful for Jupyter notebooks and writing my research notes and mathematical scratch work in &lt;a href=&#34;https://happenapps.com/&#34; target=&#34;_blank&#34;&gt;Quiver&lt;/a&gt;.&lt;/p&gt;
 
@@ -101,13 +101,13 @@
 
 &lt;h3 id=&#34;interlude-1&#34;&gt;Interlude&lt;/h3&gt;
 
-&lt;p&gt;I often struggle to sleep. I dream that my thumbs fall off. I dream that every bone in my hands breaks. I dream that my arms break out in open bleeding sores. I wake up and the pain remains like an invisible nightmare.&lt;/p&gt;
+&lt;p&gt;I struggle to sleep. I dream that my thumbs fall off. I dream that every bone in my hands breaks. I dream that my arms break out in open bleeding sores. I wake up and the pain remains like an invisible nightmare.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;h2 id=&#34;limitations&#34;&gt;Limitations&lt;/h2&gt;
 
-&lt;p&gt;The largest concern if you begin to dictate code is that you do not develop a repetitive stress injury in your vocal tract. I strongly recommend finding a vocal coach who teaches actors and singers how to protect their voices. Speaking quietly can actually cause more damage, hydration is important, and better posture will prevent damage in your voice as well as the rest of your body. It is important to take breaks, and you may find talking tiring outside of work.&lt;/p&gt;
+&lt;p&gt;The largest concern if you begin to dictate code is that you do not develop a repetitive stress injury in your vocal tract. Speaking quietly can actually cause more damage, hydration is important, and better posture will prevent damage in your voice as well as the rest of your body. I strongly recommend finding a vocal coach who teaches actors and singers how to protect their voices. It is important to take breaks, and you may find talking tiring outside of work.&lt;/p&gt;
 
 &lt;p&gt;Speech recognition technology is not perfect, and the error rate is even higher if you have an unusual accent. Furthermore, it may force you to take time off from programming every time you develop a cold or sore throat. I live in fear of even minor colds.&lt;/p&gt;
 
