@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Blackbox NLP Panel Discussion</title>
+      <link>http://nsaphra.github.io/talk/florence/</link>
+      <pubDate>Thu, 25 Jul 2019 13:00:00 +0100</pubDate>
+      
+      <guid>http://nsaphra.github.io/talk/florence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Learning Dynamics of Language Models</title>
       <link>http://nsaphra.github.io/talk/cuny/</link>
       <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
@@ -443,6 +452,279 @@ is trained using an objective that combines a loss function applied to true labe
     </item>
     
     <item>
+      <title>Spectral Graph Theory</title>
+      <link>http://nsaphra.github.io/post/spectral-graph-theory/</link>
+      <pubDate>Fri, 24 Apr 2015 18:11:42 +0100</pubDate>
+      
+      <guid>http://nsaphra.github.io/post/spectral-graph-theory/</guid>
+      <description>
+
+&lt;p&gt;My goal here is to explain some basic elements of spectral graph theory to myself.
+This post may also be useful to an audience with a similar background to mine, including rudimentary linear algebra and lay-computer-scientist exposure to graph theory.&lt;/p&gt;
+
+&lt;p&gt;Spectral graph theory is concerned with the analysis of a graph in terms
+of the eigenvectors, algebraic and geometric multiplicities, and other
+properties of matrix representations of the graph.
+These properties provide a way of efficiently extracting
+properties of the graph itself, such as communities and stability.
+I may address specific applications in machine learning and representation learning in later posts.&lt;/p&gt;
+
+&lt;p&gt;In this post, the goal is to define and understand the basic properties of the Laplacian matrix, which is just one way to represent a graph in matrix form. The Laplacian is useful for identifying communities and clusters within the graph, and in analyzing the stability of a system.&lt;/p&gt;
+
+&lt;h2 id=&#34;simple-matrix-representations&#34;&gt;Simple Matrix Representations&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s start with some intuitive representations of a graph $G = (V,E)$.
+We will use ${\bf X}(i,j)$ interchangeably with ${\bf X}_{i,j}$ for entries in
+matrix ${\bf X}$, and ${\bf x}(i)$ interchangeably with ${\bf x}_i$ for entries in
+vector ${\bf{x}}$.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;adjacency matrix&lt;/em&gt; ${\bf A} \in { 0,1 }^{|V| \times |V|}$ tells us which nodes are connected.
+We set ${\bf A}_{uv} = 1$ if there is an edge from $u$ to $v$.
+If the edge $(u,v) \not\in E$, then the corresponding entry in $A$ is set to 0.&lt;/p&gt;
+
+&lt;p&gt;In an unweighted graph, the adjacency matrix is sufficient for describing $G$.
+However, in our analysis we will often rely on information from another matrix characterizing the graph.
+The &lt;em&gt;degree matrix&lt;/em&gt; ${\bf D} \in \mathbb{N}^{|V| \times |V|}$ gives us information about how connected a node is.
+It is a diagonal matrix in which ${\bf D}_{uu} = {\textrm{deg}(u)}$, which corresponds to the number of edges coming from node $u$.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-walk-matrix&#34;&gt;The Walk Matrix&lt;/h2&gt;
+
+&lt;p&gt;If a matrix represents a graph, what do vectors represent?
+A weight vector ${\bf x} \in \mathbb{R}^{|V|}$ assigns some mass to node $v$, which we can retrieve by multiplying the weight vector by a one-hot vector ${\bf v}$, with one bit active at the element corresponding to $v$.
+So we can view a weight vector as a function mapping nodes to reals.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;walk matrix&lt;/em&gt; of $G$, defined as ${\bf W} = {\bf A} {\bf D}^{-1}$, provides a way of simulating a random walk through the graph.
+If we input a one-hot vector ${\bf v}$, representing a starting point at node $v$, we compute the probability that we end up at node $u$ after one step in a random walk:&lt;/p&gt;
+
+&lt;p&gt;$$
+\begin{aligned}
+\left[{\bf W} {\bf v}\right]&lt;em&gt;u &amp;amp;=  \sum&lt;/em&gt;{w \in V} \left[ {\bf A} {\bf D}^{-1} \right]_{uw} {\bf v}&lt;em&gt;w  &lt;br /&gt;
+&amp;amp;= \sum&lt;/em&gt;{w \in V} {\bf A}_{uw} \frac{1}{\textrm{deg}(w)} {\bf v}_w&lt;br /&gt;
+&amp;amp;= \begin{cases}
+    \frac{1}{\textrm{deg}(v)} &amp;amp;\mbox{if } (v,u) \in E &lt;br /&gt;
+    0 &amp;amp; \mbox{otherwise}.
+\end{cases}
+\end{aligned}
+$$&lt;/p&gt;
+
+&lt;p&gt;Another way to think of this is in terms of the flow of mass.
+We start with a mass of 1 on node $v$, and at each timestep diffuses the mass moves down nearby edges.
+If we want to model the mass after $k$ timesteps, starting at node $v$, we can compute it with ${\bf W}^k {\bf v}$.&lt;/p&gt;
+
+&lt;!-- TODO: Eigenvalues  --&gt;
+
+&lt;h2 id=&#34;the-laplacian&#34;&gt;The Laplacian&lt;/h2&gt;
+
+&lt;p&gt;To understand the Laplacian matrix, let&amp;rsquo;s first define the Laplacian ${\bf L}$
+for a simple graph&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; $G = (V,E)$.
+For two node indices $u,v \in V$, the corresponding cell in the Laplacian is given in terms of the degree of each node.
+$${\bf L}_{uv} = \begin{cases}
+    {\textrm{deg}_u} &amp;amp;\mbox{if } u = v &lt;br /&gt;
+    -1 &amp;amp; \mbox{if } (u,v) \in E&lt;br /&gt;
+    0 &amp;amp; \mbox{otherwise}.
+\end{cases}$$&lt;/p&gt;
+
+&lt;p&gt;For the normalized Laplacian $\mathcal{L}$, we instead say
+$$\mathcal{L}_{uv} = \begin{cases}
+    1 &amp;amp;\mbox{if } \textrm{$u = v$ and ${\textrm{deg}(v)} \not= 0$} &lt;br /&gt;
+    -\frac{1}{\sqrt{ {\textrm{deg}(u)} {\textrm{deg}(v)} }} &amp;amp; \mbox{if } (u,v) \in E&lt;br /&gt;
+    0 &amp;amp; \mbox{otherwise}.
+\end{cases}$$&lt;/p&gt;
+
+&lt;p&gt;The normalized Laplacian is the form we will use for most analysis.
+It is equivalent to normalizing every row and column in the Laplacian.
+Let&amp;rsquo;s look at some of its properties:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Every row and column sums to 0.&lt;/li&gt;
+&lt;li&gt;For a graph with no isolated nodes, the diagonals of $\mathcal{L}$ are all 1. In this case, we can decompose the matrix in terms ${\bf D}$ and ${\bf A}$.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Note that
+\( {\mathcal{L}}_{uv} = { {\bf L}_{uv} } \frac{1}{\sqrt{ {\textrm{deg}(u)} {\textrm{deg}(v)} }} = {\bf L}_{uv} {\bf D}^{-&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;}_u {\bf D}^{-&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;}_v \). We therefore know that ${\mathcal{L}}$ decomposes as:&lt;/p&gt;
+
+&lt;p&gt;$$
+\begin{aligned}
+{\mathcal{L}}_{uv} &amp;amp;= {\bf D}^{-&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;} {\bf L} {\bf D}^{-&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;}
+\end{aligned}
+$$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The cells
+in ${\bf L}$ can be expressed as $${\bf L}&lt;em&gt;{uv} = \begin{cases}
+-{\bf A}&lt;/em&gt;{uv} &amp;amp;\mbox{if } u \not= v&lt;br /&gt;
+{\bf D}&lt;em&gt;{uu} &amp;amp;\mbox{if } u = v
+\end{cases}$$, and in a simple graph we know ${\bf A}&lt;/em&gt;{uu} = 0$ since there are no self-cycles. Therefore, we have the decomposition:&lt;/p&gt;
+
+&lt;p&gt;$$
+\begin{aligned}
+{\mathcal{L}} &amp;amp;= {\bf D}^{-&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;} ({\bf D} - {\bf A}) {\bf D}^{-&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;}&lt;br /&gt;
+&amp;amp;= {\bf I} - {\bf D}^{-&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;} {\bf A} {\bf D}^{-&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;}
+\end{aligned}
+$$&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;what-does-it-mean&#34;&gt;What does it mean?&lt;/h4&gt;
+
+&lt;p&gt;A intuition for the normalized Laplacian can be gleaned from its product
+with a vector ${\bf g} \in \mathbb{R}^{|V|}$.&lt;/p&gt;
+
+&lt;p&gt;$$\begin{aligned}
+\left[ {\mathcal{L}} {\bf g} \right]&lt;em&gt;u &amp;amp;= \frac{1}{\sqrt{ {\textrm{deg}(u)} }} \sum&lt;/em&gt;{v: (u,v) \in E} \left(\frac{ {\bf g}_u }{\sqrt{ {\textrm{deg}(u)} }} - \frac{ {\bf g}_v }{\sqrt{ {\textrm{deg}(v)} }} \right)&lt;br /&gt;
+&amp;amp;= \frac{1}{\sqrt{ {\textrm{deg}(u)} }} \left({\textrm{deg}(u)} \frac{ {\bf g}&lt;em&gt;u }{\sqrt{ {\textrm{deg}(u)} }} -  \sum&lt;/em&gt;{v: (u,v) \in E} \frac{ {\bf g}_v }{\sqrt{ {\textrm{deg}(v)} }} \right)&lt;br /&gt;
+&amp;amp;= {\bf g}&lt;em&gt;u - \sum&lt;/em&gt;{v: (u,v) \in E} \frac{ {\bf g}_v }{\sqrt{ {\textrm{deg}(u)} {\textrm{deg}(v)} }}
+\end{aligned}$$&lt;/p&gt;
+
+&lt;p&gt;For a one-hot vector ${\bf g}$ representing node $v$, $[{\mathcal{L}}{\bf g}](v) = 1$ and for all other $u \in V$,
+$[{\mathcal{L}}{\bf g}]_u = -\frac{1}{\sqrt{ {\textrm{deg}(u)} {\textrm{deg}(v)} }}$
+if $u$ and $v$ are adjacent, and otherwise $[{\mathcal{L}} {\bf g}]_v = 0$.
+Note that the sum of output cells for the nodes neighboring $v$ will
+be -1, and since the only other nonzero entry will be a 1 (in cell $v$), the
+sum of values in the resulting vector will be 0! In fact, any output
+vector will have a sum of 0.&lt;/p&gt;
+
+&lt;p&gt;If we activate more bits in ${\bf g}$ in addition to $v$, what happens to
+$[{\mathcal{L}}{\bf g}]_u$? If we activate every node in the graph and each
+cell receives a uniform weight, then the product will be 0. When else
+does this happen? If we start with any node $v$ and then activate cells
+in our vector corresponding to each of its neighbors, and go on
+recursively for each neighbor, then every time we add a score of 1 for a
+node, we also add the sum of scores of its neighbors (always -1), with a
+resulting sum of 0 for every cell in the output vector. In general, a
+product of 0 occurs if the nodes activated in the input vector form a
+closed subgraph – that is, no node has an edge connecting it to a node
+that is not activated.&lt;/p&gt;
+
+&lt;!-- Another way to think of the product ${\mathcal{L}}{\bf g}$ is as a potential
+function where the nodes with positive weights in ${\bf g}$ “attract” while
+their neighbors “repel”. A steady state can be achieved with a vector
+representing a closed subgraph, so these attractions and repulsions are
+perfectly balanced, resulting in an output vector of 0s.
+
+Notice, however, that a closed subgraph is not the only vector that
+induces a steady state! These closed subgraphs form the null space of
+the Laplacian. But any eigenvector of the Laplacian will, by definition,
+yield a rescaled version of itself. The output vector’s weights on each
+node will remain unchanged.
+
+All this gives us a hint about what the Laplacian reveals.
+If everyone in your social circle catches a cold, but nobody interacts with people outside of your social circle, the cold will never spread further. You achieved a stable state in which --&gt;
+
+&lt;p&gt;&lt;em&gt;What are the eigenvalues of a Laplacian? What do the eigenvectors of a Laplacian tell us about the graph itself? What does all this have to do with clustering, or community detection, or representation learning? Answers to these questions and more coming soon in the next thrilling installment of this series of blog posts on Spectral Graph Theory!&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;A simple graph is a directed graph with no loops and no more than one edge connecting any two nodes.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What Does a Coder Do If They Can&#39;t Type?</title>
+      <link>http://nsaphra.github.io/post/hands/</link>
+      <pubDate>Fri, 24 Apr 2015 18:11:42 +0100</pubDate>
+      
+      <guid>http://nsaphra.github.io/post/hands/</guid>
+      <description>
+
+&lt;p&gt;In August of 2015, my hands stopped working. I could still control them, but every movement accumulated more pain, so every motion came with a cost: getting dressed in the  morning, sending a text, lifting a glass. In relating this story, I often mention that I spent a month with nothing to do but go to a bar and order a shot of vodka with a straw in it. I then laugh, as though this is a joke. For the first month, I couldn&amp;rsquo;t uncurl my fingers.&lt;/p&gt;
+
+&lt;p&gt;I often allow people to assume, for their own comfort, that I experience less pain now. This is not true. Every time I have told this story, I&amp;rsquo;ve been ignoring the background buzz of tingling, burning pain. The pain has not stopped for four years. When I share this information, people don&amp;rsquo;t know how to respond, which is why I let the story end as though the pain is in the past.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;talon&#34;&gt;Talon&lt;/h2&gt;
+
+&lt;p&gt;Due to this disability, I cannot type or write. Many people have asked me about the stack that enables me to be productive in spite of this limitation.&lt;/p&gt;
+
+&lt;p&gt;The star of the show is &lt;a href=&#34;https://talonvoice.com/&#34; target=&#34;_blank&#34;&gt;Talon&lt;/a&gt;, a system which makes it easy to write customized grammars and scripts that work with speech recognition systems to enable programmers. Commands range from simple aliases for common symbols to complex meta-commands to repeat a previous utterance or  change dictation modes. For example, just in the case of parentheses, I have separate commands for &lt;code&gt;(&lt;/code&gt;, &lt;code&gt;)&lt;/code&gt;, &lt;code&gt;()&lt;/code&gt;, and &lt;code&gt;()⬅️&lt;/code&gt; (which leaves the cursor between parentheses so my next utterance is bracketed).&lt;/p&gt;
+
+&lt;p&gt;We each have a number of scripts particular to the programmer. My most precious script that I&amp;rsquo;ve written is probably my indexed clipboard:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt; &lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; talon.voice &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; Key, press, Str, Context
+ &lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; talon &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; clip
+ &lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; .talon_community.utils &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+
+ ctx &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Context(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;clipboard&amp;#39;&lt;/span&gt;)
+
+ &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;copy_selection&lt;/span&gt;(m):
+     &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; clip&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;capture() &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; sel:
+         press(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cmd-c&amp;#39;&lt;/span&gt;)
+     &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; len(m&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;_words) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:
+         key &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;join(parse_words(m))
+         value &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sel&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get()
+         keymap[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;paste &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt; key] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; value
+         ctx&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;keymap(keymap)
+         ctx&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;reload()
+     &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+         clip&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;set(sel&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get())
+
+ keymap &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+     &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;paste&amp;#39;&lt;/span&gt;: Key(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cmd-v&amp;#39;&lt;/span&gt;),
+     &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;clip [&amp;lt;dgndictation&amp;gt;]&amp;#39;&lt;/span&gt;: copy_selection,
+ }
+
+ ctx&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;keymap(keymap)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The use is simple. After selecting a particular phrase using my cursor control commands, I say &amp;ldquo;clip [foo]&amp;ldquo;, and every time I want to enter the same phrase after, I say &amp;ldquo;paste [foo]&amp;ldquo;. I therefore only have to dictate a particularly obnoxious variable name once. However, it does introduce a new challenge: every variable has two names, its written name and its spoken name. The unfortunate side effect is to exacerbate the difficulty of naming variables, which has been called &amp;ldquo;the hardest problem in computer science&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;If you are a vim or Emacs power user, this may all feel familiar to you. I have commands for searching, moving a cursor, selection, and manipulating the clipboard. Learning to dictate code is a lot like learning a new text editor very thoroughly, down to the challenge of customizing for your particular languages and needs.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://github.com/dwiel/talon_community&#34; target=&#34;_blank&#34;&gt;Talon community&lt;/a&gt; has specialized commands that take effect depending on application or programming language. For a Perl user, for example, a good starting point might be to borrow settings from Emily Shea:&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/Mz3JeYfBTcY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;My Talon setup relies on Dragon for the speech recognition side. Unfortunately, Nuance has discontinued OSX Dragon editions that make scripting possible. The coder behind Talon, &lt;a href=&#34;http://ryanhileman.com/&#34; target=&#34;_blank&#34;&gt;Ryan Hileman&lt;/a&gt;, is working on a suitable replacement but as of the publication of this blog post it is not yet ready.&lt;/p&gt;
+
+&lt;h2 id=&#34;limitations&#34;&gt;Limitations&lt;/h2&gt;
+
+&lt;p&gt;The largest concern if you begin to dictate code is that you do not develop a repetitive stress injury in your vocal tract. I strongly recommend finding a vocal coach who teaches actors and singers how to protect their voices. Speaking quietly can actually cause more damage, hydration is important, and better posture will prevent damage in your voice as well as the rest of your body. It is important to take breaks, and you may find talking tiring outside of work.&lt;/p&gt;
+
+&lt;p&gt;Speech recognition technology is not perfect, and the error rate is even higher if you have an unusual accent. Furthermore, it may force you to take time off from programming every time you develop a cold or sore throat. I live in fear of even minor colds.&lt;/p&gt;
+
+&lt;p&gt;Having a private space to dictate in is essential. I was unable to be productive working from home, but as soon as I had a private office I developed momentum on several research projects. For a lot of people this is a huge limitation, because of the productivity-destroying, soul-sucking trend towards open offices for all programming work. In many countries, large companies will be obligated to provide a space to work in if you are disabled.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;People often ask my diagnosis, but it officially depends on the country I&amp;rsquo;m in. After an initial assumption that carpal tunnel was to blame, I was given my first diagnosis of &lt;em&gt;fibromyalgia&lt;/em&gt;, a word which is Doctor for &amp;ldquo;go away&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Later on a neurologist performed a skin biopsy that led to my official American diagnosis of &amp;ldquo;idiopathic small fiber neuropathy&amp;rdquo;, meaning of that I am missing crucial nerve fibers that transmit heat and pain but nobody knows why. &lt;em&gt;Idiopathic&lt;/em&gt; is also Doctor for &amp;ldquo;go away&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;I brought my medical records from America to the UK. My British neurologist did not read my records or perform examinations. He gave me my British diagnosis by submitting a note that he had no evidence of any physical cause, and he &amp;ldquo;suspected significant functional overlay&amp;rdquo;, which is how they teach you to call someone delusional in medical school.&lt;/p&gt;
+
+&lt;p&gt;My GP read the note and informed me: He would not prescribe me painkillers. He would not send me for a second opinion from a neurologist, or treatment from any other specialist. The only referral he would write would be to a psychologist to help me &amp;ldquo;resolve the underlying issues behind my pain&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;He then kicked me out of his office for using the word &amp;ldquo;fucking&amp;rdquo;. &amp;ldquo;We do not tolerate cursing&amp;rdquo;, said a sign in the lobby.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;equipment&#34;&gt;Equipment&lt;/h2&gt;
+
+&lt;p&gt;For dictating, I use two different microphones. In the office, I use a &lt;a href=&#34;https://www.amazon.com/Sennheiser-ME-II-Dynamic-Microphone/dp/B00UO0UNOE&#34; target=&#34;_blank&#34;&gt;Sennheiser ME-3&lt;/a&gt;, while for travel I use a Bluetooth headset, the &lt;a href=&#34;https://en-uk.sennheiser.com/mb-pro-1-uc-ml-and-mb-pro-2-uc-ml&#34; target=&#34;_blank&#34;&gt;Sennheiser MB Pro 2&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Another essential piece of equipment for me is my foot pedal, a &lt;a href=&#34;https://www.pageflip.com/products/firefly&#34; target=&#34;_blank&#34;&gt;PageFlip Firefly&lt;/a&gt;. It is programmable, so I have modified the settings to include one that is useful for reading papers in &lt;a href=&#34;https://skim-app.sourceforge.io/&#34; target=&#34;_blank&#34;&gt;Skim&lt;/a&gt;, with the left pedal corresponding to a click and the right pedal corresponding to down arrow. I can use my feet to scroll, and to click for annotations. Another pedal setting I have added maps the pedals to click and shift+enter. This setting is useful for Jupyter notebooks and writing my research notes and mathematical scratch work in &lt;a href=&#34;https://happenapps.com/&#34; target=&#34;_blank&#34;&gt;Quiver&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When my hands are unusually aggravated, I cannot nudge my mouse around anymore and I fall back on &lt;a href=&#34;https://shortcatapp.com/&#34; target=&#34;_blank&#34;&gt;shortcat&lt;/a&gt;, which allows me to press buttons by dictating keyboard strokes instead of using a mouse.&lt;/p&gt;
+
+&lt;p&gt;My final essential piece of equipment is a pair of &lt;a href=&#34;https://www.futuro-usa.com/3M/en_US/futuro-us/products/~/FUTURO-Night-Wrist-Support/?N=4318+3294508029+3294529207&amp;amp;rt=rud&#34; target=&#34;_blank&#34;&gt;large wrist braces&lt;/a&gt;. The primary purpose of my braces is to discourage me from habitual hand use. I always wear them at conferences, because wearing them is easier than constantly repeating, &amp;ldquo;I cannot shake hands due to a disability&amp;rdquo;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I often struggle to sleep. I dream that my thumbs fall off. I dream that every bone in my hands breaks. I dream that my arms break out in open bleeding sores. I wake up and the pain remains like an invisible nightmare.&lt;/p&gt;
+
+&lt;p&gt;Life with my disability is not easy, but thanks to &lt;a href=&#34;https://en.wikipedia.org/wiki/Hedonic_treadmill&#34; target=&#34;_blank&#34;&gt;hedonic adaptation&lt;/a&gt; and satisfying work and &lt;a href=&#34;https://auldreekierollerderby.com/&#34; target=&#34;_blank&#34;&gt;hobbies&lt;/a&gt;, I am actually very happy. If you have recently developed a disability or chronic pain condition, it may feel like you could never adjust to the lifestyle required. I promise that you can, given time and effort. I encourage other disabled scientists and programmers to reach out to me with any questions they have.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://nsaphra.github.io/img/IMG_0167.jpg&#34; alt=&#34;Picture of me smiling while wearing my microphone and wrist braces&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>AMRICA: an AMR Inspector for Cross-language Alignments</title>
       <link>http://nsaphra.github.io/publication/naomi-saphra-amrica-2015/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
@@ -475,76 +757,6 @@ is trained using an objective that combines a loss function applied to true labe
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>http://nsaphra.github.io/publication/cotterell-algerian-2014/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Understanding Objects in Detail with Fine-grained Attributes.</title>
-      <link>http://nsaphra.github.io/publication/vedaldi-understanding-2014/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://nsaphra.github.io/publication/vedaldi-understanding-2014/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Understanding Latent Dirichlet Allocation</title>
-      <link>http://nsaphra.github.io/post/lda/</link>
-      <pubDate>Mon, 09 Jul 2012 00:00:00 +0100</pubDate>
-      
-      <guid>http://nsaphra.github.io/post/lda/</guid>
-      <description>&lt;p&gt;&lt;em&gt;[Note - This is a repost of a post I made on my old blog while I was in undergrad. I&amp;rsquo;m including it in case someone finds it useful, since my old blog is defunct. I haven&amp;rsquo;t significantly edited it, so I&amp;rsquo;m sorry if it doesn&amp;rsquo;t fit into my current style.]&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;This post is directed to a lay CS audience. I am an undergraduate in CS, so I consider myself part of that audience. If you&amp;rsquo;re awesome at machine learning already and don&amp;rsquo;t want to help me along here, just read the paper.&lt;/p&gt;
-
-&lt;p&gt;Latent Dirichlet Allocation (LDA) is a common method of topic modeling.  That is, if I have a document and want to figure out if it&amp;rsquo;s a sports  article or a mathematics paper, I can use LDA to build a system that  looks at other sports articles or mathematics papers and automatically  decides whether this unseen document&amp;rsquo;s topic is sports or math.&lt;/p&gt;
-
-&lt;p&gt;To LDA, a document is just a collection of topics where  each topic has some particular probability of generating a particular  word. For our potential sports article, the word &amp;ldquo;average&amp;rdquo; appears 4  times. What&amp;rsquo;s the probability of a sports topic generating that many  instances of &amp;ldquo;average&amp;rdquo;? We determine this by looking at each training  document as a &amp;ldquo;bag of words&amp;rdquo; pulled from a distribution selected by a Dirichlet process.&lt;/p&gt;
-
-&lt;p&gt;Dirichlet is a distribution specified by a vector parameter $$\alpha$$ containing some \(\alpha_i\) corresponding to each topic  \(i\), which we write as \(\textrm{Dir}(\alpha)\). The formula for computing the probability density function for each topic vector \(x\) is proportional to the product over all topics \(i\) of \(x_i \alpha_i\). \(x_i\) is the probability that the topic is \(i\), so the items in \(x\) must sum to 1. That keeps you from getting arbitrarily large probabilities by giving arbitrarily large values of \(x\).&lt;/p&gt;
-
-&lt;p&gt;Confused? Ready for a picture ripped off Wikipedia?&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://commons.wikimedia.org/wiki/File:Dirichlet_distributions.png&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dirichlet_distributions.png/695px-Dirichlet_distributions.png&#34; alt=&#34;Dirichlet Distributions&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Those graphs all show Dirichlet distributions for three topics. That  triangle at the bottom has one side for each topic, and the closer a point on the triangle is to side \(i\) the higher the probability of topic \(i\).  The purple curve is the probability density function over the mixture  of topics. See how the edges of the triangle all have probability 0? We  said that the pdf is proportional to  \(x_i \alpha_i\), so if \(x_i\) is 0, the probability of that mixture of topics is 0. That restricts  our model a bit and ensures that we never are totally certain about the  topic of a document.&lt;/p&gt;
-
-&lt;p&gt;Okay, we&amp;rsquo;ve got &amp;ldquo;Dirichlet&amp;rdquo;, so let&amp;rsquo;s pop back up to the concept of LDA.  If we want to find that mixture of topics for a document, we first need  to determine the value of each  \(x_i\). That means we&amp;rsquo;ve got another Dirichlet distribution in our model for each topic i where instead of the sides of the triangle being topics, they&amp;rsquo;re words.  Picture the topic &amp;ldquo;sports article&amp;rdquo; like those distributions above, but  instead of sitting on triangles they&amp;rsquo;re on shapes with so many sides the shapes go into as many dimensions as we have topics.. If &amp;ldquo;average&amp;rdquo; appears in a sports  article, the bump pushes closer to the side for &amp;ldquo;average&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;The Latent part of LDA comes into play because in  statistics, a variable we have to infer rather than directly observing  is called a &amp;ldquo;latent variable&amp;rdquo;. We&amp;rsquo;re only directly observing the words  and not the topics, so the topics themselves are latent variables (along  with the distributions themselves).&lt;/p&gt;
-
-&lt;p&gt;LDA assumes that each document k is generated by:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;From our Dirichlet distribution for k, sample a random  distribution of topics. That is, pick a place on that triangle that is  associated with a certain probability of generating each topic. If we   choose a place very close to the &amp;ldquo;sports article&amp;rdquo; edge, we have a higher  probability of picking &amp;ldquo;sports article&amp;rdquo;. The probability of picking a  particular place on the triangle is described by the pdf of the  Dirichlet distribution (the placement of the purple mound).&lt;/li&gt;
-&lt;li&gt;For each topic, pick a distribution of words for that topic from the Dirichlet for that topic.&lt;/li&gt;
-&lt;li&gt;For each word in document \(k\),
-
-&lt;ol&gt;
-&lt;li&gt;From the distribution of topics selected for \(k\), sample a topic, like &amp;ldquo;sports article&amp;rdquo;.&lt;/li&gt;
-&lt;li&gt;From the distribution selected for &amp;ldquo;sports article&amp;rdquo;, pick the current word.&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;So let&amp;rsquo;s say your first four words all come from baseball and your  document maybe starts off &amp;ldquo;average the bat bat&amp;rdquo;. If that&amp;rsquo;s not how you  tend to write, that&amp;rsquo;s okay. All models are wrong.&lt;/p&gt;
-
-&lt;p&gt;The important thing to understand is that your Dirichlet priors are distribution of distributions, which are selected to generate each word.&lt;/p&gt;
-
-&lt;p&gt;We&amp;rsquo;re generally not just making these distributions for the heck of it  or to actually generate documents. We want to figure out what topic was  probably used for each word by our lazy writer who randomly generates each word. Maybe it&amp;rsquo;s been a while since you took probability, but do you remember this guy?
-\[ P(A|B) = \frac{P(B|A) P(A)}{P(B)} \]&lt;/p&gt;
-
-&lt;p&gt;This is Bayes&amp;rsquo; Theorem. We already know the probability of generating a particular word given a topic according to our model. That&amp;rsquo;s the probability of sampling that word from the topic&amp;rsquo;s word distribution. So that&amp;rsquo;s \( P(B|A) \) where \( B \) is the event of &amp;ldquo;average&amp;rdquo; being generated for the current word and A is the event of picking the topic &amp;ldquo;sports article&amp;rdquo;. \(P(A)\) is the probability of &amp;ldquo;sports article&amp;rdquo; being picked from the document&amp;rsquo;s topic distribution. \( P(B) \) is the probability of &amp;ldquo;average&amp;rdquo; being generated at all, which is the sum over all topic selections \(A\) of \(P(B|A)P(A)\). Now we can use Bayes to find \(P(A|B)\), the probability that topic \(A\) generated word \(B\).&lt;/p&gt;
-
-&lt;p&gt;So now we know how to figure out the probability of each topic per word.  Now we already know that our documents are assumed to be a mix of  topics, but we want to find the most likely dominant topic. The lazy  writer generates each word independently of each other word, so the  overall probability of a topic throughout the document is the product of  \(P(A|B)\) at each word \(B\). Just pick the most likely topic across the words.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Automatic verification of boundary annotations from mechanical turk</title>
-      <link>http://nsaphra.github.io/publication/naomi-saphra-automatic-2012/</link>
-      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      
-      <guid>http://nsaphra.github.io/publication/naomi-saphra-automatic-2012/</guid>
       <description></description>
     </item>
     

@@ -30,5 +30,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>draft</title>
+      <link>http://nsaphra.github.io/tags/draft/</link>
+      <pubDate>Fri, 24 Apr 2015 18:11:42 +0100</pubDate>
+      
+      <guid>http://nsaphra.github.io/tags/draft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>personal</title>
+      <link>http://nsaphra.github.io/tags/personal/</link>
+      <pubDate>Fri, 24 Apr 2015 18:11:42 +0100</pubDate>
+      
+      <guid>http://nsaphra.github.io/tags/personal/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
