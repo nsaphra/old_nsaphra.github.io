@@ -18,7 +18,7 @@
       <pubDate>Thu, 08 Aug 2019 18:11:42 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/post/hands/</guid>
-      <description>In August of 2015, my hands stopped working. I could still control them, but every movement accumulated more pain, so every motion came with a cost: getting dressed in the morning, sending a text, lifting a glass. In relating this story, I often mention that for months before I learned to work without my hands, I had nothing to do but go to a bar and order a shot of vodka with a straw in it.</description>
+      <description>In August of 2015, my hands stopped working. I could still control them, but every movement accumulated more pain, so every motion came with a cost: getting dressed in the morning, sending a text, lifting a glass. I was interning at Google that summer about to begin a PhD in Scotland, but coding all day would have left me in agony. In relating this story, I often mention that for months before I learned to work without my hands, I had nothing to do but go to a bar and order a shot of vodka with a straw in it.</description>
     </item>
     
     <item>
@@ -29,16 +29,6 @@
       <guid>http://nsaphra.github.io/post/model-scheduling/</guid>
       <description>Models can be built incrementally by modifying their hyperparameters during training. This is most common in transfer learning settings, in which we seek to adapt the knowledge in an existing model for a new domain or task. The more general problem of continuous learning is also an obvious application. Even with a predefined data set, however, incrementally constraining the topology of the network can offer benefits as regularization.
 Dynamic Hyperparameters The easiest incrementally modified models to train may be those in which hyperparameters are updated at each epoch.</description>
-    </item>
-    
-    <item>
-      <title>Spectral Graph Theory</title>
-      <link>http://nsaphra.github.io/post/spectral-graph-theory/</link>
-      <pubDate>Fri, 24 Apr 2015 18:11:42 +0100</pubDate>
-      
-      <guid>http://nsaphra.github.io/post/spectral-graph-theory/</guid>
-      <description>My goal here is to explain some basic elements of spectral graph theory to myself. This post may also be useful to an audience with a similar background to mine, including rudimentary linear algebra and lay-computer-scientist exposure to graph theory.
-Spectral graph theory is concerned with the analysis of a graph in terms of the eigenvectors, algebraic and geometric multiplicities, and other properties of matrix representations of the graph. These properties provide a way of efficiently extracting properties of the graph itself, such as communities and stability.</description>
     </item>
     
     <item>
