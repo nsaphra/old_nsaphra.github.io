@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Accessible Means Hackable</title>
+      <link>http://nsaphra.github.io/talk/pydata/</link>
+      <pubDate>Sat, 15 Aug 2020 13:00:00 +0100</pubDate>
+      
+      <guid>http://nsaphra.github.io/talk/pydata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Learning Dynamics of Language Models</title>
       <link>http://nsaphra.github.io/talk/brown/</link>
       <pubDate>Fri, 15 May 2020 13:00:00 +0100</pubDate>
@@ -601,15 +610,6 @@ is trained using an objective that combines a loss function applied to true labe
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>http://nsaphra.github.io/publication/naomi-saphra-domain-2015/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A framework for (under) specifying dependency syntax without overloading annotators</title>
-      <link>http://nsaphra.github.io/publication/schneider-framework-2014/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://nsaphra.github.io/publication/schneider-framework-2014/</guid>
       <description></description>
     </item>
     
