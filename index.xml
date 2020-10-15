@@ -218,6 +218,15 @@
     </item>
     
     <item>
+      <title>Learning Dynamics of Text Models</title>
+      <link>http://nsaphra.github.io/talk/ai2/</link>
+      <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
+      
+      <guid>http://nsaphra.github.io/talk/ai2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Learning Dynamics of Text Models With SVCCA</title>
       <link>http://nsaphra.github.io/talk/amsterdam/</link>
       <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
@@ -241,15 +250,6 @@
       <pubDate>Tue, 26 Feb 2019 13:00:00 +0000</pubDate>
       
       <guid>http://nsaphra.github.io/talk/panopticon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sparsity Emerges Naturally in Neural Language Models</title>
-      <link>http://nsaphra.github.io/publication/saphra-sparsity-2019/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://nsaphra.github.io/publication/saphra-sparsity-2019/</guid>
       <description></description>
     </item>
     
