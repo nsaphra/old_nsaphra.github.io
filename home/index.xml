@@ -31,20 +31,20 @@
     </item>
     
     <item>
-      <title>Selected Publications</title>
-      <link>http://nsaphra.github.io/home/publications_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
-      
-      <guid>http://nsaphra.github.io/home/publications_selected/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Selected Talks</title>
       <link>http://nsaphra.github.io/home/talks/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/home/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Selected Publications</title>
+      <link>http://nsaphra.github.io/home/publications_selected/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      
+      <guid>http://nsaphra.github.io/home/publications_selected/</guid>
       <description></description>
     </item>
     
