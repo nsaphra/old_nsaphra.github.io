@@ -11,6 +11,35 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>The Perils of Monodomainism</title>
+      <link>http://nsaphra.github.io/post/monodomainism/</link>
+      <pubDate>Wed, 28 Apr 2021 00:00:00 -0400</pubDate>
+      
+      <guid>http://nsaphra.github.io/post/monodomainism/</guid>
+      <description>&lt;p&gt;Reaching the endpoint of a PhD studying how language models learn, I have spent several years telling people that I study &amp;ldquo;machine learning and natural language processing&amp;rdquo;. However, my colleagues who tried to understand or augment image classifiers would describe themselves only as working in &amp;ldquo;machine learning&amp;rdquo;. I argue that this pattern reflects thinking about what it means to be &amp;ldquo;application&amp;rdquo; work or &amp;ldquo;core&amp;rdquo; machine learning that damages our understanding of statistical modeling and deep learning as a whole.&lt;/p&gt;
+
+&lt;p&gt;Why do we know so little about how language models learn? This gap is in part because consideration of NLP as a domain is historically rare in venues that publish most training dynamics research, or analytic work in learning theory. A current search&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; of ICML 2020 publications returned 169 papers with citations to “Association for Computational Linguistics” or “ACL”, even including citations to many potential sister conferences: NAACL, AACL, or EACL. A search for citations to a single vision conference, “Computer Vision and Pattern Recognition” or “CVPR”, turned up 541 papers. In COLT publications since 2017, the same searches turned up 13 and 23 papers, respectively. In ICML 2020, Wikitext-* or PTB references found only 16 results, while the most popular small corpus for image classification, MNIST, found 264 ICML publications&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Linguistics provides us with the salient concept of &lt;em&gt;markedness&lt;/em&gt; &lt;a href=&#34;https://www.degruyter.com/document/doi/10.1515/9783110862010.11/html&#34; target=&#34;_blank&#34;&gt;(Andersen, 1989)&lt;/a&gt;. In language, some forms of a word are the default form, while others are explicitly marked by some additional inflection. An example would be contrast between the word “marked”, which is an &lt;em&gt;unmarked&lt;/em&gt; form compared to “unmarked”, which is &lt;em&gt;marked&lt;/em&gt; by the prefix “un-”. In machine learning, we might call CV an unmarked domain by convention, in contrast to the &lt;em&gt;marked&lt;/em&gt; NLP. This convention means that certain tasks and architectures are considered the default environments to understand. Such a convention privileges understanding continuous data over discrete; ConvNets over LSTMs; ResNets over Transformers; geometric tasks over structured prediction.&lt;/p&gt;
+
+&lt;p&gt;Understanding one machine learning domain will always extend analysis of others. For example, latent tree structure is inherent to both domains, but in CV, it is obscured by the image data from which we must compose eyes and mouth into a face—and subsequently, body and face into a cow &lt;a href=&#34;https://ieeexplore.ieee.org/document/6909858&#34; target=&#34;_blank&#34;&gt;(Vedaldi et al., 2014)&lt;/a&gt;. Image classification is also a language task, because it is our language that provides the intuitions which we use to construct ontologies that turn into image classes; English does not provide us with common distinctions for different packs of wolves, but it names every dog breed, and so the image labels are chosen according to available terminology.&lt;/p&gt;
+
+&lt;p&gt;Many researchers think of text data as arcane, but the “default” domain of CV many idiosyncrasies on which to overfit our understanding of statistical modeling. CV provides us with many interesting geometric phenomena, but the underlying structure of language &lt;em&gt;without&lt;/em&gt; the added noisy channel of an image can provide a clear and simple domain worth analyzing, as well. A true understanding of statistical models must be a multi-domain understanding, not a mono-domain view focused on one task and its peculiarities.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;Searches were performed with Google Scholar.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;*CL venues have also become distanced from work in computational linguistics &lt;a href=&#34;https://www.aclweb.org/anthology/J07-2013.pdf&#34; target=&#34;_blank&#34;&gt;(Reiter, 2007)&lt;/a&gt;, leaving NLP as a field deprived of new scientific work in its data domain as well as new scientific work in its methodologies.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Accessible Means Hackable (Keynote)</title>
       <link>http://nsaphra.github.io/talk/pydata/</link>
       <pubDate>Sat, 15 Aug 2020 13:00:00 -0400</pubDate>
@@ -241,15 +270,6 @@
       <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
       
       <guid>http://nsaphra.github.io/talk/queer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Paying the Panopticon</title>
-      <link>http://nsaphra.github.io/talk/panopticon/</link>
-      <pubDate>Tue, 26 Feb 2019 13:00:00 -0500</pubDate>
-      
-      <guid>http://nsaphra.github.io/talk/panopticon/</guid>
       <description></description>
     </item>
     

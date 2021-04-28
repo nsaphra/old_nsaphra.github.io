@@ -13,10 +13,12 @@
   
   
   
-  <meta name="description" content="AI Pessimist/Optimist">
+    
+  
+  <meta name="description" content="A petty rant on the exceptional treatment of computer vision applications by the machine learning community.">
 
   
-  <link rel="alternate" hreflang="en-us" href="">
+  <link rel="alternate" hreflang="en-us" href="http://nsaphra.github.io/post/monodomainism/">
 
   
 
@@ -79,24 +81,26 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="">
+  <link rel="canonical" href="http://nsaphra.github.io/post/monodomainism/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Objective Funk">
-  <meta property="og:url" content="">
-  <meta property="og:title" content="404 Page not found | Objective Funk">
-  <meta property="og:description" content="AI Pessimist/Optimist">
+  <meta property="og:url" content="http://nsaphra.github.io/post/monodomainism/">
+  <meta property="og:title" content="The Perils of Monodomainism | Objective Funk">
+  <meta property="og:description" content="A petty rant on the exceptional treatment of computer vision applications by the machine learning community.">
   <meta property="og:locale" content="en-us">
   
+  <meta property="article:published_time" content="2021-04-28T00:00:00-04:00">
   
+  <meta property="article:modified_time" content="2021-04-28T00:00:00-04:00">
+  
+
   
 
   
 
-  
-
-  <title>404 Page not found | Objective Funk</title>
+  <title>The Perils of Monodomainism | Objective Funk</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -227,89 +231,96 @@
   </div>
 </nav>
 
-<div class="container">
 
-  <h1>Page not found</h1>
-  <p>Perhaps you were looking for one of these?</p>
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
   
-  
-  <h2>Posts</h2>
-  
-  <ul>
-    <li><a href="http://nsaphra.github.io/post/monodomainism/">The Perils of Monodomainism</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="http://nsaphra.github.io/post/hands/">What Does a Coder Do If They Can&#39;t Type?</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="http://nsaphra.github.io/post/model-scheduling/">Model Scheduling</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="http://nsaphra.github.io/post/lda/">Understanding Latent Dirichlet Allocation</a></li>
-  </ul>
-  
-  
+
+
+  <div class="article-container">
+    <h1 itemprop="name">The Perils of Monodomainism</h1>
+
+    
+
+<div class="article-metadata">
 
   
   
-  <h2>Publications</h2>
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Naomi Saphra">
+  </span>
   
-  <ul>
-    <li><a href="http://nsaphra.github.io/publication/tahaei-understanding-2020/">Understanding Privacy-Related Questions on Stack Overflow</a></li>
-  </ul>
+
+  <span class="article-date">
+    
+    <meta content="2021-04-28 00:00:00 -0400 EDT" itemprop="datePublished">
+    <time datetime="2021-04-28 00:00:00 -0400 EDT" itemprop="dateModified">
+      Apr 28, 2021
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Naomi Saphra">
+  </span>
+
   
-  <ul>
-    <li><a href="http://nsaphra.github.io/publication/saphra-lstms-2020/">LSTMs Compose (and Learn) Bottom-Up</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="http://nsaphra.github.io/publication/pimentel-pareto-2020/">Pareto Probing: Trading Off Accuracy for Complexity</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="http://nsaphra.github.io/publication/saphra-sparsity-2019/">Sparsity Emerges Naturally in Neural Language Models</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="http://nsaphra.github.io/publication/saphra-understanding-2019/">Understanding Learning Dynamics Of Language Models with SVCCA</a></li>
-  </ul>
+
   
   
 
   
   
-  <h2>Talks</h2>
-  
-  <ul>
-    <li><a href="http://nsaphra.github.io/talk/queer/">Transparent, Hackable, Accessible</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="http://nsaphra.github.io/talk/friends/">Learning Dynamics of LSTMs</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="http://nsaphra.github.io/talk/nyu/">Learning Dynamics of Language Models</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="http://nsaphra.github.io/talk/pydata/">Accessible Means Hackable (Keynote)</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="http://nsaphra.github.io/talk/brown/">Learning Dynamics of Language Models</a></li>
-  </ul>
   
   
 
   
+  
+
   
 
 </div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      <p>Reaching the endpoint of a PhD studying how language models learn, I have spent several years telling people that I study &ldquo;machine learning and natural language processing&rdquo;. However, my colleagues who tried to understand or augment image classifiers would describe themselves only as working in &ldquo;machine learning&rdquo;. I argue that this pattern reflects thinking about what it means to be &ldquo;application&rdquo; work or &ldquo;core&rdquo; machine learning that damages our understanding of statistical modeling and deep learning as a whole.</p>
+
+<p>Why do we know so little about how language models learn? This gap is in part because consideration of NLP as a domain is historically rare in venues that publish most training dynamics research, or analytic work in learning theory. A current search<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> of ICML 2020 publications returned 169 papers with citations to “Association for Computational Linguistics” or “ACL”, even including citations to many potential sister conferences: NAACL, AACL, or EACL. A search for citations to a single vision conference, “Computer Vision and Pattern Recognition” or “CVPR”, turned up 541 papers. In COLT publications since 2017, the same searches turned up 13 and 23 papers, respectively. In ICML 2020, Wikitext-* or PTB references found only 16 results, while the most popular small corpus for image classification, MNIST, found 264 ICML publications<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>.</p>
+
+<p>Linguistics provides us with the salient concept of <em>markedness</em> <a href="https://www.degruyter.com/document/doi/10.1515/9783110862010.11/html" target="_blank">(Andersen, 1989)</a>. In language, some forms of a word are the default form, while others are explicitly marked by some additional inflection. An example would be contrast between the word “marked”, which is an <em>unmarked</em> form compared to “unmarked”, which is <em>marked</em> by the prefix “un-”. In machine learning, we might call CV an unmarked domain by convention, in contrast to the <em>marked</em> NLP. This convention means that certain tasks and architectures are considered the default environments to understand. Such a convention privileges understanding continuous data over discrete; ConvNets over LSTMs; ResNets over Transformers; geometric tasks over structured prediction.</p>
+
+<p>Understanding one machine learning domain will always extend analysis of others. For example, latent tree structure is inherent to both domains, but in CV, it is obscured by the image data from which we must compose eyes and mouth into a face—and subsequently, body and face into a cow <a href="https://ieeexplore.ieee.org/document/6909858" target="_blank">(Vedaldi et al., 2014)</a>. Image classification is also a language task, because it is our language that provides the intuitions which we use to construct ontologies that turn into image classes; English does not provide us with common distinctions for different packs of wolves, but it names every dog breed, and so the image labels are chosen according to available terminology.</p>
+
+<p>Many researchers think of text data as arcane, but the “default” domain of CV many idiosyncrasies on which to overfit our understanding of statistical modeling. CV provides us with many interesting geometric phenomena, but the underlying structure of language <em>without</em> the added noisy channel of an image can provide a clear and simple domain worth analyzing, as well. A true understanding of statistical models must be a multi-domain understanding, not a mono-domain view focused on one task and its peculiarities.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">Searches were performed with Google Scholar.
+ <a class="footnote-return" href="#fnref:1"><sup>^</sup></a></li>
+<li id="fn:2">*CL venues have also become distanced from work in computational linguistics <a href="https://www.aclweb.org/anthology/J07-2013.pdf" target="_blank">(Reiter, 2007)</a>, leaving NLP as a field deprived of new scientific work in its data domain as well as new scientific work in its methodologies.
+ <a class="footnote-return" href="#fnref:2"><sup>^</sup></a></li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+    
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
 <footer class="site-footer">
   <div class="container">
 
