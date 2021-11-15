@@ -40,6 +40,24 @@
     </item>
     
     <item>
+      <title>A Non-Linear Structural Probe</title>
+      <link>http://nsaphra.github.io/publication/white-nonlinear-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/white-nonlinear-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The MultiBERTs: BERT Reproductions for Robustness Analysis</title>
+      <link>http://nsaphra.github.io/publication/sellam-multiberts-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/sellam-multiberts-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Accessible Means Hackable (Keynote)</title>
       <link>http://nsaphra.github.io/talk/pydata/</link>
       <pubDate>Sat, 15 Aug 2020 13:00:00 -0400</pubDate>
@@ -252,24 +270,6 @@
       <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
       
       <guid>http://nsaphra.github.io/talk/ai2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Learning Dynamics of Text Models With SVCCA</title>
-      <link>http://nsaphra.github.io/talk/amsterdam/</link>
-      <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
-      
-      <guid>http://nsaphra.github.io/talk/amsterdam/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Transparent, Hackable, Accessible</title>
-      <link>http://nsaphra.github.io/talk/queer/</link>
-      <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
-      
-      <guid>http://nsaphra.github.io/talk/queer/</guid>
       <description></description>
     </item>
     
