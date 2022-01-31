@@ -4,7 +4,7 @@
 	shorttitle = {The {MultiBERTs}},
 	url = {http://arxiv.org/abs/2106.16163},
 	abstract = {Experiments with pretrained models such as BERT are often based on a single checkpoint. While the conclusions drawn apply to the artifact (i.e., the particular instance of the model), it is not always clear whether they hold for the more general procedure (which includes the model architecture, training data, initialization scheme, and loss function). Recent work has shown that re-running pretraining can lead to substantially different conclusions about performance, suggesting that alternative evaluations are needed to make principled statements about procedures. To address this question, we introduce MultiBERTs: a set of 25 BERT-base checkpoints, trained with similar hyper-parameters as the original BERT model but differing in random initialization and data shuffling. The aim is to enable researchers to draw robust and statistically justified conclusions about pretraining procedures. The full release includes 25 fully trained checkpoints, as well as statistical guidelines and a code library implementing our recommended hypothesis testing methods. Finally, for five of these models we release a set of 28 intermediate checkpoints in order to support research on learning dynamics.},
-	urldate = {2021-11-14},
+	urldate = {2022-01-14},
 	journal = {arXiv:2106.16163 [cs]},
 	author = {Sellam, Thibault and Yadlowsky, Steve and Wei, Jason and Saphra, Naomi and D'Amour, Alexander and Linzen, Tal and Bastings, Jasmijn and Turc, Iulia and Eisenstein, Jacob and Das, Dipanjan and Tenney, Ian and Pavlick, Ellie},
 	month = jun,
@@ -12,4 +12,5 @@
 	note = {arXiv: 2106.16163},
 	keywords = {Computer Science - Computation and Language},
 	annote = {Comment: Checkpoints and example analyses: http://goo.gle/multiberts},
+	booktitle = {ICLR},
 }
