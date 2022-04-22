@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://nsaphra.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Against Monodomainism</title>
       <link>http://nsaphra.github.io/post/monodomainism/</link>
-      <pubDate>Wed, 28 Apr 2021 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 28 Apr 2021 00:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/post/monodomainism/</guid>
       <description>Reaching the endpoint of a PhD studying how language models learn, I have spent several years telling people that I study &amp;ldquo;machine learning and natural language processing&amp;rdquo;. However, my colleagues who tried to understand or augment image classifiers would describe themselves only as working in &amp;ldquo;machine learning&amp;rdquo;. I argue that this pattern reflects thinking about what it means to be &amp;ldquo;application&amp;rdquo; work or &amp;ldquo;core&amp;rdquo; machine learning that damages our understanding of statistical modeling and deep learning as a whole.</description>
@@ -43,7 +43,7 @@ Dynamic Hyperparameters The easiest incrementally modified models to train may b
     <item>
       <title>Understanding Latent Dirichlet Allocation</title>
       <link>http://nsaphra.github.io/post/lda/</link>
-      <pubDate>Mon, 09 Jul 2012 00:00:00 -0400</pubDate>
+      <pubDate>Mon, 09 Jul 2012 00:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/post/lda/</guid>
       <description>[Note - This is a repost of a post I made on my old blog while I was in undergrad. I&amp;rsquo;m including it in case someone finds it useful, since my old blog is defunct. I haven&amp;rsquo;t significantly edited it, so I&amp;rsquo;m sorry if it doesn&amp;rsquo;t fit into my current style.]

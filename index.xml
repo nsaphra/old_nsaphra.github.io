@@ -7,13 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0100</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Against Monodomainism</title>
       <link>http://nsaphra.github.io/post/monodomainism/</link>
-      <pubDate>Wed, 28 Apr 2021 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 28 Apr 2021 00:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/post/monodomainism/</guid>
       <description>&lt;p&gt;Reaching the endpoint of a PhD studying how language models learn, I have spent several years telling people that I study &amp;ldquo;machine learning and natural language processing&amp;rdquo;. However, my colleagues who tried to understand or augment image classifiers would describe themselves only as working in &amp;ldquo;machine learning&amp;rdquo;. I argue that this pattern reflects thinking about what it means to be &amp;ldquo;application&amp;rdquo; work or &amp;ldquo;core&amp;rdquo; machine learning that damages our understanding of statistical modeling and deep learning as a whole.&lt;/p&gt;
@@ -60,7 +60,7 @@
     <item>
       <title>Accessible Means Hackable (Keynote)</title>
       <link>http://nsaphra.github.io/talk/pydata/</link>
-      <pubDate>Sat, 15 Aug 2020 13:00:00 -0400</pubDate>
+      <pubDate>Sat, 15 Aug 2020 13:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/talk/pydata/</guid>
       <description></description>
@@ -69,7 +69,7 @@
     <item>
       <title>Learning Dynamics of Language Models</title>
       <link>http://nsaphra.github.io/talk/brown/</link>
-      <pubDate>Fri, 15 May 2020 13:00:00 -0400</pubDate>
+      <pubDate>Fri, 15 May 2020 13:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/talk/brown/</guid>
       <description></description>
@@ -222,7 +222,7 @@
     <item>
       <title>Blackbox NLP Panel Discussion</title>
       <link>http://nsaphra.github.io/talk/florence/</link>
-      <pubDate>Thu, 25 Jul 2019 13:00:00 -0400</pubDate>
+      <pubDate>Thu, 25 Jul 2019 13:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/talk/florence/</guid>
       <description></description>
@@ -231,7 +231,7 @@
     <item>
       <title>Get Hooked On Neural Net Inspection! That was a pun!</title>
       <link>http://nsaphra.github.io/talk/bangbangwest/</link>
-      <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
+      <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/talk/bangbangwest/</guid>
       <description></description>
@@ -240,7 +240,7 @@
     <item>
       <title>Learning Dynamics of LSTMs</title>
       <link>http://nsaphra.github.io/talk/friends/</link>
-      <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
+      <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/talk/friends/</guid>
       <description></description>
@@ -249,7 +249,7 @@
     <item>
       <title>Learning Dynamics of Language Models</title>
       <link>http://nsaphra.github.io/talk/cuny/</link>
-      <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
+      <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/talk/cuny/</guid>
       <description></description>
@@ -258,7 +258,7 @@
     <item>
       <title>Learning Dynamics of Language Models</title>
       <link>http://nsaphra.github.io/talk/nyu/</link>
-      <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
+      <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/talk/nyu/</guid>
       <description></description>
@@ -267,7 +267,7 @@
     <item>
       <title>Learning Dynamics of Text Models</title>
       <link>http://nsaphra.github.io/talk/ai2/</link>
-      <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
+      <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/talk/ai2/</guid>
       <description></description>

@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://nsaphra.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Accessible Means Hackable (Keynote)</title>
       <link>http://nsaphra.github.io/talk/pydata/</link>
-      <pubDate>Sat, 15 Aug 2020 13:00:00 -0400</pubDate>
+      <pubDate>Sat, 15 Aug 2020 13:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/talk/pydata/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>Learning Dynamics of Language Models</title>
       <link>http://nsaphra.github.io/talk/brown/</link>
-      <pubDate>Fri, 15 May 2020 13:00:00 -0400</pubDate>
+      <pubDate>Fri, 15 May 2020 13:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/talk/brown/</guid>
       <description></description>
@@ -33,7 +33,7 @@
     <item>
       <title>Blackbox NLP Panel Discussion</title>
       <link>http://nsaphra.github.io/talk/florence/</link>
-      <pubDate>Thu, 25 Jul 2019 13:00:00 -0400</pubDate>
+      <pubDate>Thu, 25 Jul 2019 13:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/talk/florence/</guid>
       <description></description>
@@ -42,7 +42,7 @@
     <item>
       <title>Get Hooked On Neural Net Inspection! That was a pun!</title>
       <link>http://nsaphra.github.io/talk/bangbangwest/</link>
-      <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
+      <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/talk/bangbangwest/</guid>
       <description></description>
@@ -51,7 +51,7 @@
     <item>
       <title>Learning Dynamics of LSTMs</title>
       <link>http://nsaphra.github.io/talk/friends/</link>
-      <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
+      <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/talk/friends/</guid>
       <description></description>
@@ -60,7 +60,7 @@
     <item>
       <title>Learning Dynamics of Language Models</title>
       <link>http://nsaphra.github.io/talk/cuny/</link>
-      <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
+      <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/talk/cuny/</guid>
       <description></description>
@@ -69,7 +69,7 @@
     <item>
       <title>Learning Dynamics of Language Models</title>
       <link>http://nsaphra.github.io/talk/nyu/</link>
-      <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
+      <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/talk/nyu/</guid>
       <description></description>
@@ -78,7 +78,7 @@
     <item>
       <title>Learning Dynamics of Text Models</title>
       <link>http://nsaphra.github.io/talk/ai2/</link>
-      <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
+      <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/talk/ai2/</guid>
       <description></description>
@@ -87,7 +87,7 @@
     <item>
       <title>Learning Dynamics of Text Models With SVCCA</title>
       <link>http://nsaphra.github.io/talk/amsterdam/</link>
-      <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
+      <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/talk/amsterdam/</guid>
       <description></description>
@@ -96,7 +96,7 @@
     <item>
       <title>Transparent, Hackable, Accessible</title>
       <link>http://nsaphra.github.io/talk/queer/</link>
-      <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
+      <pubDate>Tue, 28 May 2019 13:00:00 +0100</pubDate>
       
       <guid>http://nsaphra.github.io/talk/queer/</guid>
       <description></description>
@@ -105,7 +105,7 @@
     <item>
       <title>Paying the Panopticon</title>
       <link>http://nsaphra.github.io/talk/panopticon/</link>
-      <pubDate>Tue, 26 Feb 2019 13:00:00 -0500</pubDate>
+      <pubDate>Tue, 26 Feb 2019 13:00:00 +0000</pubDate>
       
       <guid>http://nsaphra.github.io/talk/panopticon/</guid>
       <description></description>
