@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="http://nsaphra.github.io/home/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title></title>
       <link>http://nsaphra.github.io/home/about/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>http://nsaphra.github.io/home/about/</guid>
       <description>Congratulations! You have discovered the personal website of Naomi Saphra! I am a postdoctoral researcher at NYU CILVR, working with Kyunghyun Cho. My current interests relate to NLP learning dynamics: how deep models learn to encode linguistic structure, and how we can encode inductive bias from linguistics into the training process. In my spare time, I play roller derby under the name Gaussian Retribution, do standup, and shepherd disabled programmers into the world of code dictation.</description>
@@ -24,7 +24,7 @@
     <item>
       <title>Recent Posts</title>
       <link>http://nsaphra.github.io/home/posts/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>http://nsaphra.github.io/home/posts/</guid>
       <description></description>
@@ -33,7 +33,7 @@
     <item>
       <title>Upcoming &amp; Selected Talks</title>
       <link>http://nsaphra.github.io/home/talks/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>http://nsaphra.github.io/home/talks/</guid>
       <description></description>
@@ -42,7 +42,7 @@
     <item>
       <title>Selected Publications</title>
       <link>http://nsaphra.github.io/home/publications_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>http://nsaphra.github.io/home/publications_selected/</guid>
       <description></description>
