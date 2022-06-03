@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 on Objective Funk</title>
+    <link>http://nsaphra.github.io/publication_types/1/</link>
+    <description>Recent content in 1 on Objective Funk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://nsaphra.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Non-Linear Structural Probe</title>
+      <link>http://nsaphra.github.io/publication/white-nonlinear-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/white-nonlinear-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The MultiBERTs: BERT Reproductions for Robustness Analysis</title>
+      <link>http://nsaphra.github.io/publication/sellam-multiberts-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/sellam-multiberts-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Understanding Privacy-Related Questions on Stack Overflow</title>
+      <link>http://nsaphra.github.io/publication/tahaei-understanding-2020/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/tahaei-understanding-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LSTMs Compose (and Learn) Bottom-Up</title>
+      <link>http://nsaphra.github.io/publication/saphra-lstms-2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/saphra-lstms-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pareto Probing: Trading Off Accuracy for Complexity</title>
+      <link>http://nsaphra.github.io/publication/pimentel-pareto-2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/pimentel-pareto-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Understanding Learning Dynamics Of Language Models with SVCCA</title>
+      <link>http://nsaphra.github.io/publication/saphra-understanding-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/saphra-understanding-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AMRICA: an AMR Inspector for Cross-language Alignments</title>
+      <link>http://nsaphra.github.io/publication/naomi-saphra-amrica-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/naomi-saphra-amrica-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Understanding Objects in Detail with Fine-grained Attributes</title>
+      <link>http://nsaphra.github.io/publication/vedaldi-understanding-2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/vedaldi-understanding-2014/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
