@@ -15,10 +15,10 @@
   
     
   
-  <meta name="description" content="Concerns about interpretability, computational resources, and principled inductive priors have motivated efforts to engineer sparse  neural  models for NLP tasks. If sparsity is important for NLP, might well-trained neural models naturally become roughly sparse? Using the Taxi-Euclidean norm to measure sparsity, we find that frequent input words are associated with concentrated or sparse activations, while frequent target words are associated with dispersed activations but concentrated gradients. We find that  gradients associated with function words are more concentrated than the gradients of content words, even controlling for word frequency.">
+  <meta name="description" content="AIt is widely accepted in the mode connectivity literature that when two neural networks are trained similarly on the same data, they are connected by a path through parameter space over which test set accuracy is maintained. Under some circumstances, including transfer learning from pretrained models, these paths are presumed to be linear. In contrast to existing results, we find that among text classifiers (trained on MNLI, QQP, and CoLA), some pairs of finetuned models have large barriers of increasing loss on the linear paths between them. On each task, we find distinct clusters of models which are linearly connected on the test loss surface, but are disconnected from models outside the cluster -- models that occupy separate basins on the surface. By measuring performance on specially-crafted diagnostic datasets, we find that these clusters correspond to different generalization strategies: one cluster behaves like a bag of words model under domain shift, while another cluster uses syntactic heuristics. Our work demonstrates how the geometry of the loss surface can guide models towards different heuristic functions.">
 
   
-  <link rel="alternate" hreflang="en-us" href="http://nsaphra.github.io/publication/saphra-sparsity-2019/">
+  <link rel="alternate" hreflang="en-us" href="http://nsaphra.github.io/publication/juneja-linear-2022/">
 
   
 
@@ -81,26 +81,26 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="http://nsaphra.github.io/publication/saphra-sparsity-2019/">
+  <link rel="canonical" href="http://nsaphra.github.io/publication/juneja-linear-2022/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Objective Funk">
-  <meta property="og:url" content="http://nsaphra.github.io/publication/saphra-sparsity-2019/">
-  <meta property="og:title" content="Sparsity Emerges Naturally in Neural Language Models | Objective Funk">
-  <meta property="og:description" content="Concerns about interpretability, computational resources, and principled inductive priors have motivated efforts to engineer sparse  neural  models for NLP tasks. If sparsity is important for NLP, might well-trained neural models naturally become roughly sparse? Using the Taxi-Euclidean norm to measure sparsity, we find that frequent input words are associated with concentrated or sparse activations, while frequent target words are associated with dispersed activations but concentrated gradients. We find that  gradients associated with function words are more concentrated than the gradients of content words, even controlling for word frequency.">
+  <meta property="og:url" content="http://nsaphra.github.io/publication/juneja-linear-2022/">
+  <meta property="og:title" content="Linear Connectivity Reveals Generalization Strategies | Objective Funk">
+  <meta property="og:description" content="AIt is widely accepted in the mode connectivity literature that when two neural networks are trained similarly on the same data, they are connected by a path through parameter space over which test set accuracy is maintained. Under some circumstances, including transfer learning from pretrained models, these paths are presumed to be linear. In contrast to existing results, we find that among text classifiers (trained on MNLI, QQP, and CoLA), some pairs of finetuned models have large barriers of increasing loss on the linear paths between them. On each task, we find distinct clusters of models which are linearly connected on the test loss surface, but are disconnected from models outside the cluster -- models that occupy separate basins on the surface. By measuring performance on specially-crafted diagnostic datasets, we find that these clusters correspond to different generalization strategies: one cluster behaves like a bag of words model under domain shift, while another cluster uses syntactic heuristics. Our work demonstrates how the geometry of the loss surface can guide models towards different heuristic functions.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-07-25T18:43:51&#43;00:00">
+  <meta property="article:published_time" content="2022-06-01T18:43:51&#43;00:00">
   
-  <meta property="article:modified_time" content="2019-01-01T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2022-06-01T00:00:00&#43;00:00">
   
 
   
 
-  <title>Sparsity Emerges Naturally in Neural Language Models | Objective Funk</title>
+  
+
+  <title>Linear Connectivity Reveals Generalization Strategies | Objective Funk</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -237,10 +237,10 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Sparsity Emerges Naturally in Neural Language Models</h1>
+    <h1 itemprop="name">Linear Connectivity Reveals Generalization Strategies</h1>
     <span class="pub-authors" itemprop="author">
       
-      Naomi Saphra, Adam Lopez
+      Jeevesh Juneja, Rachit Bansal, Kyunghyun Cho, João Sedoc, Naomi Saphra
       
     </span>
     <span class="pull-right">
@@ -252,7 +252,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Concerns about interpretability, computational resources, and principled inductive priors have motivated efforts to engineer sparse  neural  models for NLP tasks. If sparsity is important for NLP, might well-trained neural models naturally become roughly sparse? Using the Taxi-Euclidean norm to measure sparsity, we find that frequent input words are associated with concentrated or sparse activations, while frequent target words are associated with dispersed activations but concentrated gradients. We find that  gradients associated with function words are more concentrated than the gradients of content words, even controlling for word frequency.</p>
+    <p class="pub-abstract" itemprop="text">AIt is widely accepted in the mode connectivity literature that when two neural networks are trained similarly on the same data, they are connected by a path through parameter space over which test set accuracy is maintained. Under some circumstances, including transfer learning from pretrained models, these paths are presumed to be linear. In contrast to existing results, we find that among text classifiers (trained on MNLI, QQP, and CoLA), some pairs of finetuned models have large barriers of increasing loss on the linear paths between them. On each task, we find distinct clusters of models which are linearly connected on the test loss surface, but are disconnected from models outside the cluster &ndash; models that occupy separate basins on the surface. By measuring performance on specially-crafted diagnostic datasets, we find that these clusters correspond to different generalization strategies: one cluster behaves like a bag of words model under domain shift, while another cluster uses syntactic heuristics. Our work demonstrates how the geometry of the loss surface can guide models towards different heuristic functions.</p>
     
 
     
@@ -263,8 +263,8 @@
           <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
           <div class="col-xs-12 col-sm-9">
             
-            <a href="http://nsaphra.github.io/publication/#7">
-              Workshop paper
+            <a href="http://nsaphra.github.io/publication/#9">
+              Preprint
             </a>
             
           </div>
@@ -276,18 +276,6 @@
     
 
     
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
-        <div class="row">
-          <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-          <div class="col-xs-12 col-sm-9"><em>ICML Workshop on Identifying and Understanding Deep Learning Phenomena</em></div>
-        </div>
-      </div>
-      <div class="col-sm-1"></div>
-    </div>
-    <div class="visible-xs space-below"></div>
-    
 
     <div class="row">
       <div class="col-sm-1"></div>
@@ -295,7 +283,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
           <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-            January, 2019
+            June, 2022
           </div>
         </div>
       </div>
@@ -315,7 +303,7 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://openreview.net/forum?id=H1ets1h56E" target="_blank" rel="noopener">
+<a class="btn btn-primary btn-outline" href="https://arxiv.org/abs/2205.12411" target="_blank" rel="noopener">
   PDF
 </a>
 

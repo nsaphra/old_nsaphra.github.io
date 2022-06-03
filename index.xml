@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Linear Connectivity Reveals Generalization Strategies</title>
+      <link>http://nsaphra.github.io/publication/juneja-linear-2022/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://nsaphra.github.io/publication/juneja-linear-2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Against Monodomainism</title>
       <link>http://nsaphra.github.io/post/monodomainism/</link>
       <pubDate>Wed, 28 Apr 2021 00:00:00 -0400</pubDate>
@@ -261,15 +270,6 @@
       <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
       
       <guid>http://nsaphra.github.io/talk/nyu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Learning Dynamics of Text Models</title>
-      <link>http://nsaphra.github.io/talk/ai2/</link>
-      <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
-      
-      <guid>http://nsaphra.github.io/talk/ai2/</guid>
       <description></description>
     </item>
     
