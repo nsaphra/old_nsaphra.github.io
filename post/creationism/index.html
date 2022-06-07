@@ -91,9 +91,9 @@
   <meta property="og:description" content="Nothing in Deep Learning Makes Sense Except in the Light of SGD.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2021-07-28T00:00:00-04:00">
+  <meta property="article:published_time" content="2022-06-07T00:00:00-04:00">
   
-  <meta property="article:modified_time" content="2021-07-28T00:00:00-04:00">
+  <meta property="article:modified_time" content="2022-06-07T00:00:00-04:00">
   
 
   
@@ -279,9 +279,9 @@
 
   <span class="article-date">
     
-    <meta content="2021-07-28 00:00:00 -0400 EDT" itemprop="datePublished">
-    <time datetime="2021-07-28 00:00:00 -0400 EDT" itemprop="dateModified">
-      Jul 28, 2021
+    <meta content="2022-06-07 00:00:00 -0400 EDT" itemprop="datePublished">
+    <time datetime="2022-06-07 00:00:00 -0400 EDT" itemprop="dateModified">
+      Jun 7, 2022
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -334,13 +334,13 @@ Causal modeling can help, but interventions to test the influence of particular 
 
 <p>I recently had to manage the trap of interpretability creationism myself. My coauthors had found that, when training text classifiers repeatedly with different random seeds, <a href="https://arxiv.org/abs/2205.12411" target="_blank">models can occur in a number of distinct clusters</a>. Further, we could predict the generalization behavior of a model based on which other models it was connected to on the loss surface. Now, we suspected that different finetuning runs found models with different generalization behavior because their trajectories entered different basins on the loss surface.</p>
 
-<p>But could we actually make this claim? What if one cluster actually corresponded to earlier stages of a model? Eventually those models would leave for the cluster with better generalization, so our only real result would be that some finetuning runs were slower than others. We had to confirm that training trajectories could actually become trapped in a basin, providing an explanation for the diversity of generalization behavior in trained models. Indeed, when we looked at several checkpoints, we confirmed that models that were very central to either cluster would become <em>even more</em> strongly connected to the rest of their cluster over the course of training. Instead of offering a just-so story, we explored the evolution of observed behavior to confirm our hypothesis.</p>
+<p>But could we actually make this claim? What if one cluster actually corresponded to earlier stages of a model? Eventually those models would leave for the cluster with better generalization, so our only real result would be that some finetuning runs were slower than others. We had to demonstrate that training trajectories could actually become trapped in a basin, providing an explanation for the diversity of generalization behavior in trained models. Indeed, when we looked at several checkpoints, we confirmed that models that were very central to either cluster would become <em>even more</em> strongly connected to the rest of their cluster over the course of training. Instead of offering a just-so story based on a static model, we explored the evolution of observed behavior to confirm our hypothesis.</p>
 
 <p><img src="/img/clusters.png" alt="k" /></p>
 
 <h2 id="a-proposal">A Proposal</h2>
 
-<p>To be clear, not every question can be answered <em>only</em> by observing the training process. Causal claims require interventions! In biology, for example, research about antibiotic resistance requires us to deliberately expose bacteria to antibiotics, rather than waiting and hoping to find a natural experiment. Even claims currently being made in training dynamics may require experimental confirmation.</p>
+<p>To be clear, not every question can be answered by <em>only</em> observing the training process. Causal claims require interventions! In biology, for example, research about antibiotic resistance requires us to deliberately expose bacteria to antibiotics, rather than waiting and hoping to find a natural experiment. Even the claims currently being made based on observations of training dynamics may require experimental confirmation.</p>
 
 <p>Furthermore, not all claims require <em>any</em> observation of the training process. Even to ancient humans, many organs had obvious purpose: eyes see, hearts pump blood, and <a href="https://www.scientificamerican.com/article/aristotle-thought-the-brain-was-a-radiator/" target="_blank">brains are refrigerators</a>. Likewise in NLP, just by analyzing static models we can make simple claims: that particular neurons activate in the presence of particular properties, or that some types of information remain accessible within a model. However, the training dimension can still clarify the meaning of many observations made in a static model.</p>
 
