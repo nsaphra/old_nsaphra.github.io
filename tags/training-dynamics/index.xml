@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>training dynamics on Objective Funk</title>
+    <link>http://nsaphra.github.io/tags/training-dynamics/</link>
+    <description>Recent content in training dynamics on Objective Funk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Wed, 28 Jul 2021 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="http://nsaphra.github.io/tags/training-dynamics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Interpretability Creationism</title>
+      <link>http://nsaphra.github.io/post/creationism/</link>
+      <pubDate>Wed, 28 Jul 2021 00:00:00 -0400</pubDate>
+      
+      <guid>http://nsaphra.github.io/post/creationism/</guid>
+      <description>For centuries, Europeans agreed that the presence of a cuckoo egg was a great honor to a nesting bird, as it granted an opportunity to exhibit Christian hospitality. The devout bird enthusiastically fed her holy guest, even more so than she would her own (evicted) chicks (Davies, 2015). In 1859, Charles Darwin’s studies of another occasional brood parasite, finches, called into question any rosy, cooperative view of bird behavior (Darwin, 1859).</description>
+    </item>
+    
+  </channel>
+</rss>
