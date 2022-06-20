@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Sources of Variance in Pretraining and Finetuning</title>
+      <link>http://nsaphra.github.io/talk/ucirvine/</link>
+      <pubDate>Mon, 20 Jun 2022 13:00:00 -0400</pubDate>
+      
+      <guid>http://nsaphra.github.io/talk/ucirvine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Interpretability Creationism</title>
       <link>http://nsaphra.github.io/post/creationism/</link>
       <pubDate>Tue, 07 Jun 2022 00:00:00 -0400</pubDate>
@@ -58,11 +67,29 @@ Causal modeling can help, but interventions to test the influence of particular 
     </item>
     
     <item>
+      <title>Sources of Variance in Pretraining and Finetuning (Keynote)</title>
+      <link>http://nsaphra.github.io/talk/quebec/</link>
+      <pubDate>Wed, 01 Jun 2022 14:30:00 -0400</pubDate>
+      
+      <guid>http://nsaphra.github.io/talk/quebec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Linear Connectivity Reveals Generalization Strategies</title>
       <link>http://nsaphra.github.io/publication/juneja-linear-2022/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>http://nsaphra.github.io/publication/juneja-linear-2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mathematical Fundamentals of AI</title>
+      <link>http://nsaphra.github.io/talk/nyu_mlschool/</link>
+      <pubDate>Sat, 01 Jan 2022 15:00:00 -0500</pubDate>
+      
+      <guid>http://nsaphra.github.io/talk/nyu_mlschool/</guid>
       <description></description>
     </item>
     
@@ -281,33 +308,6 @@ Causal modeling can help, but interventions to test the influence of particular 
       <pubDate>Thu, 25 Jul 2019 13:00:00 -0400</pubDate>
       
       <guid>http://nsaphra.github.io/talk/florence/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Get Hooked On Neural Net Inspection! That was a pun!</title>
-      <link>http://nsaphra.github.io/talk/bangbangwest/</link>
-      <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
-      
-      <guid>http://nsaphra.github.io/talk/bangbangwest/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Learning Dynamics of LSTMs</title>
-      <link>http://nsaphra.github.io/talk/friends/</link>
-      <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
-      
-      <guid>http://nsaphra.github.io/talk/friends/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Learning Dynamics of Language Models</title>
-      <link>http://nsaphra.github.io/talk/cuny/</link>
-      <pubDate>Tue, 28 May 2019 13:00:00 -0400</pubDate>
-      
-      <guid>http://nsaphra.github.io/talk/cuny/</guid>
       <description></description>
     </item>
     
